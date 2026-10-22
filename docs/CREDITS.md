@@ -6,6 +6,9 @@ Le code de Violeta, les 76 dialogues, les récits, les points de grammaire, les
 tests, les transcriptions françaises et les quiz sont originaux et publiés sous
 licence MIT (voir [LICENSE](../LICENSE)).
 
+Cette licence MIT **ne couvre pas** les 16 extraits vidéo de
+`public/media/ecoute/`, qui restent sous CC BY 4.0 (voir ci-dessous).
+
 ## Compréhensions orales — CC BY 4.0
 
 Les 16 extraits vidéo proviennent de **Spanish Proficiency Exercises**, une

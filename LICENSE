@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Les contenus pédagogiques (dialogues, récits, grammaire, tests, traductions,
-quiz) sont couverts par la même licence MIT.
-
-Les 16 extraits vidéo de public/media/ecoute/ ne sont pas couverts par cette
-licence : ils proviennent de Spanish Proficiency Exercises (COERLL, University
-of Texas at Austin) et sont réutilisés sous licence CC BY 4.0. Voir
-docs/CREDITS.md pour l'attribution complète.
