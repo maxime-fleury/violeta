@@ -1,0 +1,150 @@
+# 02 — Verbes du quotidien et actions
+vivir|vivre|v
+comer|manger|v
+beber|boire|v
+dormir|dormir|v
+despertarse|se réveiller|v
+levantarse|se lever|v
+ducharse|se doucher|v
+vestirse|s'habiller|v
+leer|lire|v
+escribir|écrire|v
+escuchar|écouter|v
+mirar|regarder|v
+buscar|chercher|v
+encontrar|trouver|v
+comprar|acheter|v
+vender|vendre|v
+pagar|payer|v
+trabajar|travailler|v
+estudiar|étudier|v
+aprender|apprendre|v
+entender|comprendre|v
+pensar|penser|v
+creer|croire|v
+sentir|sentir|v
+llevar|porter / emmener|v
+dejar|laisser|v
+pasar|passer|v
+volver|revenir|v
+salir|sortir|v
+llegar|arriver|v
+abrir|ouvrir|v
+cerrar|fermer|v
+empezar|commencer|v
+terminar|terminer|v
+acabar|finir|v
+ayudar|aider|v
+necesitar|avoir besoin de|v
+gustar|plaire|v
+encantar|adorer|v
+odiar|détester|v
+preferir|préférer|v
+conocer|connaître|v
+jugar|jouer|v
+ganar|gagner|v
+perder|perdre|v
+esperar|attendre / espérer|v
+preguntar|demander|v
+responder|répondre|v
+usar|utiliser|v
+poner|mettre|v
+tomar|prendre / boire|v
+seguir|suivre / continuer|v
+pedir|demander (un objet)|v
+contar|raconter / compter|v
+recordar|se souvenir|v
+olvidar|oublier|v
+cocinar|cuisiner|v
+limpiar|nettoyer|v
+lavar|laver|v
+cortar|couper|v
+servir|servir|v
+probar|goûter / essayer|v
+elegir|choisir|v
+cambiar|changer|v
+guardar|garder / ranger|v
+romper|casser|v
+arreglar|réparer|v
+construir|construire|v
+subir|monter|v
+bajar|descendre|v
+caminar|marcher|v
+correr|courir|v
+nadar|nager|v
+viajar|voyager|v
+conducir|conduire|v
+aparcar|se garer|v
+coger|prendre / attraper|v
+andar|marcher / aller|v
+caer|tomber|v
+nacer|naître|v
+morir|mourir|v
+reír|rire|v
+llorar|pleurer|v
+sonreír|sourire|v
+besar|embrasser|v
+abrazar|prendre dans les bras|v
+oír|entendre|v
+oler|sentir (odeur)|v
+tocar|toucher / jouer (musique)|v
+saltar|sauter|v
+bailar|danser|v
+cantar|chanter|v
+dibujar|dessiner|v
+pintar|peindre|v
+traducir|traduire|v
+repetir|répéter|v
+explicar|expliquer|v
+contestar|répondre|v
+enviar|envoyer|v
+recibir|recevoir|v
+invitar|inviter|v
+celebrar|fêter|v
+descansar|se reposer|v
+divertirse|s'amuser|v
+acostarse|se coucher|v
+soñar|rêver|v
+desayunar|prendre le petit-déjeuner|v
+almorzar|déjeuner|v
+cenar|dîner|v
+preparar|préparer|v
+mezclar|mélanger|v
+añadir|ajouter|v
+calentar|chauffer|v
+enfriar|refroidir|v
+encender|allumer|v
+apagar|éteindre|v
+funcionar|fonctionner|v
+ocurrir|arriver (se produire)|v
+parecer|sembler|v
+quedar|rester / convenir|v
+quedarse|rester (séjourner)|v
+irse|s'en aller|v
+traer|apporter|v
+mantener|maintenir|v
+obtener|obtenir|v
+ofrecer|offrir|v
+permitir|permettre|v
+prohibir|interdire|v
+decidir|décider|v
+intentar|essayer|v
+tratar|traiter / essayer de|v
+lograr|réussir à|v
+evitar|éviter|v
+soler|avoir l'habitude de|v
+doler|faire mal|v
+faltar|manquer|v
+sobrar|rester (en trop)|v
+importar|importer|v
+interesar|intéresser|v
+molestar|déranger|v
+preocuparse|s'inquiéter|v
+alegrarse|se réjouir|v
+cansarse|se fatiguer|v
+enfermar|tomber malade|v
+curar|soigner|v
+cuidar|prendre soin|v
+crecer|grandir|v
+mejorar|améliorer|v
+empeorar|empirer|v

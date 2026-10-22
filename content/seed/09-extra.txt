@@ -1,0 +1,25 @@
+# 09 — Compléments nécessaires aux scènes et aux dialogues
+mesilla|table de chevet|n.f
+perchero|portemanteau|n.m
+felpudo|paillasson|n.m
+copa|verre à pied|n.f
+mando|télécommande|n.m
+grifo|robinet|n.m
+tostadora|grille-pain|n.f
+bandeja|plateau|n.f
+delantal|tablier|n.m
+encima|dessus|adv
+debajo|dessous|adv
+dentro|dedans|adv
+detrás|derrière|adv
+delante|devant|adv
+alrededor|autour|adv
+derecha|droite|n.f
+izquierda|gauche|n.f
+cruzar|traverser|v
+girar|tourner|v
+arriba|en haut|adv
+abajo|en bas|adv
+fuera|dehors|adv
+asiento|siège|n.m
+cena|dîner|n.f

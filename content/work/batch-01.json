@@ -1,0 +1,1029 @@
+[
+ {
+  "id": "que",
+  "es": "que",
+  "fr": "que",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "de",
+  "es": "de",
+  "fr": "de",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "no",
+  "es": "no",
+  "fr": "non",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "a",
+  "es": "a",
+  "fr": "à",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "el",
+  "es": "el",
+  "fr": "le / la (article)",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ser",
+  "es": "ser",
+  "fr": "être (essence)",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "y",
+  "es": "y",
+  "fr": "et",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "en",
+  "es": "en",
+  "fr": "dans / en",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "lo",
+  "es": "lo",
+  "fr": "le (neutre) / cela",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "un",
+  "es": "un",
+  "fr": "un",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "por",
+  "es": "por",
+  "fr": "par / pour",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "que-interrog",
+  "es": "qué",
+  "fr": "que / quoi",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "me",
+  "es": "me",
+  "fr": "me / moi",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "te",
+  "es": "te",
+  "fr": "te / toi",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "se",
+  "es": "se",
+  "fr": "se",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "con",
+  "es": "con",
+  "fr": "avec",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "para",
+  "es": "para",
+  "fr": "pour",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mi",
+  "es": "mi",
+  "fr": "mon",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "estar",
+  "es": "estar",
+  "fr": "être (état)",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "si",
+  "es": "si",
+  "fr": "si",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "bien",
+  "es": "bien",
+  "fr": "bien",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "pero",
+  "es": "pero",
+  "fr": "mais",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "yo",
+  "es": "yo",
+  "fr": "je",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "eso",
+  "es": "eso",
+  "fr": "cela",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "si-oui",
+  "es": "sí",
+  "fr": "oui",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "su",
+  "es": "su",
+  "fr": "son",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "tu",
+  "es": "tu",
+  "fr": "ton",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "aqui",
+  "es": "aquí",
+  "fr": "ici",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "como",
+  "es": "como",
+  "fr": "comme",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "le",
+  "es": "le",
+  "fr": "lui",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mas-adv",
+  "es": "más",
+  "fr": "plus",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "esto",
+  "es": "esto",
+  "fr": "ceci",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ya",
+  "es": "ya",
+  "fr": "déjà",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "todo",
+  "es": "todo",
+  "fr": "tout",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "esta",
+  "es": "esta",
+  "fr": "cette",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ir",
+  "es": "ir",
+  "fr": "aller",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "muy",
+  "es": "muy",
+  "fr": "très",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "haber",
+  "es": "haber",
+  "fr": "avoir (auxiliaire)",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ahora",
+  "es": "ahora",
+  "fr": "maintenant",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "algo",
+  "es": "algo",
+  "fr": "quelque chose",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "tener",
+  "es": "tener",
+  "fr": "avoir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "nos",
+  "es": "nos",
+  "fr": "nous",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "tu-pron",
+  "es": "tú",
+  "fr": "tu (toi)",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "nada",
+  "es": "nada",
+  "fr": "rien",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "cuando",
+  "es": "cuando",
+  "fr": "quand",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "este",
+  "es": "este",
+  "fr": "ce / ceci",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "saber",
+  "es": "saber",
+  "fr": "savoir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "asi",
+  "es": "así",
+  "fr": "ainsi",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "poder",
+  "es": "poder",
+  "fr": "pouvoir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "como-interrog",
+  "es": "cómo",
+  "fr": "comment",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "querer",
+  "es": "querer",
+  "fr": "vouloir / aimer",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "o",
+  "es": "o",
+  "fr": "ou",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "el-pron",
+  "es": "él",
+  "fr": "il / lui",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "bueno",
+  "es": "bueno",
+  "fr": "bon",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "hacer",
+  "es": "hacer",
+  "fr": "faire",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "creer",
+  "es": "creer",
+  "fr": "croire",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "ella",
+  "es": "ella",
+  "fr": "elle",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ese",
+  "es": "ese",
+  "fr": "ce / cela",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "porque",
+  "es": "porque",
+  "fr": "parce que",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "quien",
+  "es": "quién",
+  "fr": "qui",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "nunca",
+  "es": "nunca",
+  "fr": "jamais",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "donde",
+  "es": "dónde",
+  "fr": "où",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "dos",
+  "es": "dos",
+  "fr": "deux",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "senor",
+  "es": "señor",
+  "fr": "monsieur",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "tiempo",
+  "es": "tiempo",
+  "fr": "temps",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "hombre",
+  "es": "hombre",
+  "fr": "homme",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "mucho",
+  "es": "mucho",
+  "fr": "beaucoup",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "entonces",
+  "es": "entonces",
+  "fr": "alors",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ti",
+  "es": "ti",
+  "fr": "toi",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "vida",
+  "es": "vida",
+  "fr": "vie",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "ver",
+  "es": "ver",
+  "fr": "voir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "alguien",
+  "es": "alguien",
+  "fr": "quelqu'un",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "hasta",
+  "es": "hasta",
+  "fr": "jusqu'à",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "sin",
+  "es": "sin",
+  "fr": "sans",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mi-pron",
+  "es": "mí",
+  "fr": "moi",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "solo",
+  "es": "solo",
+  "fr": "seulement / seul",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ano",
+  "es": "año",
+  "fr": "année / an",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "sobre",
+  "es": "sobre",
+  "fr": "sur / au sujet de",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "decir",
+  "es": "decir",
+  "fr": "dire",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "uno",
+  "es": "uno",
+  "fr": "un",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "siempre",
+  "es": "siempre",
+  "fr": "toujours",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "tambien",
+  "es": "también",
+  "fr": "aussi",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "antes",
+  "es": "antes",
+  "fr": "avant",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "dia",
+  "es": "día",
+  "fr": "jour",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "noche",
+  "es": "noche",
+  "fr": "nuit",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "nadie",
+  "es": "nadie",
+  "fr": "personne",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "otro",
+  "es": "otro",
+  "fr": "autre",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "parecer",
+  "es": "parecer",
+  "fr": "sembler",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "nosotros",
+  "es": "nosotros",
+  "fr": "nous",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "poco",
+  "es": "poco",
+  "fr": "peu",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "padre",
+  "es": "padre",
+  "fr": "père",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "trabajar",
+  "es": "trabajar",
+  "fr": "travailler",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "gente",
+  "es": "gente",
+  "fr": "les gens",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "mirar",
+  "es": "mirar",
+  "fr": "regarder",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "les",
+  "es": "les",
+  "fr": "leur",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mismo",
+  "es": "mismo",
+  "fr": "même",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ellos",
+  "es": "ellos",
+  "fr": "ils",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "pasar",
+  "es": "pasar",
+  "fr": "passer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "dinero",
+  "es": "dinero",
+  "fr": "argent",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "hijo",
+  "es": "hijo",
+  "fr": "fils",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "hablar",
+  "es": "hablar",
+  "fr": "parler",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "seguro",
+  "es": "seguro",
+  "fr": "sûr / sécurisé",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "claro",
+  "es": "claro",
+  "fr": "clair",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "mundo",
+  "es": "mundo",
+  "fr": "monde",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "amigo",
+  "es": "amigo",
+  "fr": "ami",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "despues",
+  "es": "después",
+  "fr": "après",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "momento",
+  "es": "momento",
+  "fr": "moment",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "desde",
+  "es": "desde",
+  "fr": "depuis",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "manana",
+  "es": "mañana",
+  "fr": "matin / demain",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "grande",
+  "es": "grande",
+  "fr": "grand",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "necesitar",
+  "es": "necesitar",
+  "fr": "avoir besoin de",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "papa",
+  "es": "papá",
+  "fr": "papa",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "mio",
+  "es": "mío",
+  "fr": "mien (à moi)",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "gustar",
+  "es": "gustar",
+  "fr": "plaire",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "nuestro",
+  "es": "nuestro",
+  "fr": "notre",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "nuevo",
+  "es": "nuevo",
+  "fr": "nouveau",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "nombre",
+  "es": "nombre",
+  "fr": "nom / prénom",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "venir",
+  "es": "venir",
+  "fr": "venir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "tres",
+  "es": "tres",
+  "fr": "trois",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "menos",
+  "es": "menos",
+  "fr": "moins",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "deber",
+  "es": "deber",
+  "fr": "devoir",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mal",
+  "es": "mal",
+  "fr": "mal",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "madre",
+  "es": "madre",
+  "fr": "mère",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "hoy",
+  "es": "hoy",
+  "fr": "aujourd'hui",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "mama",
+  "es": "mamá",
+  "fr": "maman",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "luego",
+  "es": "luego",
+  "fr": "ensuite",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ }
+]

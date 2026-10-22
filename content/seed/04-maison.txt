@@ -1,0 +1,143 @@
+# 04 — Maison, objets, ville, transports
+casa|maison|n.f
+hogar|foyer|n.m
+piso|appartement / étage|n.m
+apartamento|appartement|n.m
+edificio|immeuble|n.m
+habitación|chambre / pièce|n.f
+cuarto|pièce / chambre|n.m
+salón|salon|n.m
+cocina|cuisine|n.f
+baño|salle de bain|n.m
+dormitorio|chambre|n.m
+comedor|salle à manger|n.m
+entrada|entrée|n.f
+pasillo|couloir|n.m
+balcón|balcon|n.m
+terraza|terrasse|n.f
+jardín|jardin|n.m
+garaje|garage|n.m
+ascensor|ascenseur|n.m
+escalera|escalier|n.f
+puerta|porte|n.f
+ventana|fenêtre|n.f
+pared|mur|n.f
+suelo|sol / parquet|n.m
+techo|plafond|n.m
+llave|clé|n.f
+cerradura|serrure|n.f
+timbre|sonnette|n.m
+mueble|meuble|n.m
+mesa|table|n.f
+silla|chaise|n.f
+sofá|canapé|n.m
+cama|lit|n.f
+armario|armoire|n.m
+estantería|étagère|n.f
+cajón|tiroir|n.m
+lámpara|lampe|n.f
+espejo|miroir|n.m
+alfombra|tapis|n.f
+cortina|rideau|n.m
+cuadro|tableau|n.m
+reloj|horloge / montre|n.m
+televisión|télévision|n.f
+radio|radio|n.f
+nevera|réfrigérateur|n.f
+frigorífico|réfrigérateur|n.m
+horno|four|n.m
+microondas|micro-ondes|n.m
+lavadora|machine à laver|n.f
+fregadero|évier|n.m
+ducha|douche|n.f
+bañera|baignoire|n.f
+lavabo|lavabo|n.m
+inodoro|toilettes|n.m
+toalla|serviette|n.f
+jabón|savon|n.m
+cepillo|brosse|n.m
+papel|papier|n.m
+vaso|verre|n.m
+plato|assiette / plat|n.m
+tenedor|fourchette|n.m
+cuchillo|couteau|n.m
+cuchara|cuillère|n.f
+taza|tasse|n.f
+botella|bouteille|n.f
+olla|casserole|n.f
+sartén|poêle|n.f
+servilleta|serviette de table|n.f
+mantel|nappe|n.m
+cojín|coussin|n.m
+manta|couverture|n.f
+sábana|drap|n.f
+almohada|oreiller|n.f
+colchón|matelas|n.m
+escoba|balai|n.f
+plancha|fer à repasser|n.f
+basura|poubelle / déchets|n.f
+bolsa|sac|n.m
+caja|boîte|n.f
+paraguas|parapluie|n.m
+abrigo|manteau|n.m
+zapato|chaussure|n.m
+ropa|vêtements|n.f
+camisa|chemise|n.f
+pantalón|pantalon|n.m
+falda|jupe|n.f
+vestido|robe|n.m
+jersey|pull|n.m
+chaqueta|veste|n.f
+calcetín|chaussette|n.m
+sombrero|chapeau|n.m
+bolso|sac à main|n.m
+cartera|portefeuille|n.f
+gafas|lunettes|n.f
+ciudad|ville|n.f
+pueblo|village / peuple|n.m
+calle|rue|n.f
+plaza|place|n.f
+avenida|avenue|n.f
+esquina|coin (de rue)|n.f
+barrio|quartier|n.m
+centro|centre|n.m
+parque|parc|n.m
+tienda|magasin|n.f
+mercado|marché|n.m
+supermercado|supermarché|n.m
+panadería|boulangerie|n.f
+banco|banque / banc|n.m
+correo|courrier / poste|n.m
+escuela|école|n.f
+universidad|université|n.f
+biblioteca|bibliothèque|n.f
+museo|musée|n.m
+cine|cinéma|n.m
+teatro|théâtre|n.m
+restaurante|restaurant|n.m
+bar|bar|n.m
+hotel|hôtel|n.m
+iglesia|église|n.f
+estación|gare / saison|n.f
+aeropuerto|aéroport|n.m
+puerto|port|n.m
+puente|pont|n.m
+semáforo|feu tricolore|n.m
+coche|voiture|n.m
+autobús|bus|n.m
+tren|train|n.m
+bicicleta|vélo|n.f
+moto|moto|n.f
+taxi|taxi|n.m
+avión|avion|n.m
+barco|bateau|n.m
+camino|chemin|n.m
+carretera|route|n.f
+gasolina|essence|n.f
+billete|billet|n.m
+parada|arrêt|n.f
+andén|quai|n.m
+maleta|valise|n.f
+mapa|carte|n.m
+transporte|transport|n.m
+vecindario|voisinage|n.m

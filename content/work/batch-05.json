@@ -1,0 +1,1088 @@
+[
+ {
+  "id": "contrato",
+  "es": "contrato",
+  "fr": "contrat",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "copa",
+  "es": "copa",
+  "fr": "verre à pied",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "correo",
+  "es": "correo",
+  "fr": "courrier / poste",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "cortar",
+  "es": "cortar",
+  "fr": "couper",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "corto",
+  "es": "corto",
+  "fr": "court",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "costumbre",
+  "es": "costumbre",
+  "fr": "habitude",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "crecer",
+  "es": "crecer",
+  "fr": "grandir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "crudo",
+  "es": "crudo",
+  "fr": "cru",
+  "pos": "adj",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "cuaderno",
+  "es": "cuaderno",
+  "fr": "cahier",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "cuadrado",
+  "es": "cuadrado",
+  "fr": "carré",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "cuadro",
+  "es": "cuadro",
+  "fr": "tableau",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "cuarenta",
+  "es": "cuarenta",
+  "fr": "quarante",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cuchara",
+  "es": "cuchara",
+  "fr": "cuillère",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "cuchillo",
+  "es": "cuchillo",
+  "fr": "couteau",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "cuello",
+  "es": "cuello",
+  "fr": "cou",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "cuidar",
+  "es": "cuidar",
+  "fr": "prendre soin",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "cultura",
+  "es": "cultura",
+  "fr": "culture",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "curar",
+  "es": "curar",
+  "fr": "soigner",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "curioso",
+  "es": "curioso",
+  "fr": "curieux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "curso",
+  "es": "curso",
+  "fr": "année / cours",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "debajo",
+  "es": "debajo",
+  "fr": "dessous",
+  "pos": "adv",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "deberes",
+  "es": "deberes",
+  "fr": "devoirs",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "debil",
+  "es": "débil",
+  "fr": "faible",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "decidir",
+  "es": "decidir",
+  "fr": "décider",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "dedo",
+  "es": "dedo",
+  "fr": "doigt",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "delantal",
+  "es": "delantal",
+  "fr": "tablier",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "delante",
+  "es": "delante",
+  "fr": "devant",
+  "pos": "adv",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "delgado",
+  "es": "delgado",
+  "fr": "mince",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "delicioso",
+  "es": "delicioso",
+  "fr": "délicieux",
+  "pos": "adj",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "deporte",
+  "es": "deporte",
+  "fr": "sport",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "desayunar",
+  "es": "desayunar",
+  "fr": "prendre le petit-déjeuner",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "desayuno",
+  "es": "desayuno",
+  "fr": "petit-déjeuner",
+  "pos": "n",
+  "gender": "m",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "descansar",
+  "es": "descansar",
+  "fr": "se reposer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "descanso",
+  "es": "descanso",
+  "fr": "pause",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "desierto",
+  "es": "desierto",
+  "fr": "désert",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "despertarse",
+  "es": "despertarse",
+  "fr": "se réveiller",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "dibujar",
+  "es": "dibujar",
+  "fr": "dessiner",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "diccionario",
+  "es": "diccionario",
+  "fr": "dictionnaire",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "diciembre",
+  "es": "diciembre",
+  "fr": "décembre",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "dieciseis",
+  "es": "dieciséis",
+  "fr": "seize",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "diente",
+  "es": "diente",
+  "fr": "dent",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "diferencia",
+  "es": "diferencia",
+  "fr": "différence",
+  "pos": "n",
+  "gender": "f",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "director",
+  "es": "director",
+  "fr": "directeur",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "divertido",
+  "es": "divertido",
+  "fr": "amusant",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "divertirse",
+  "es": "divertirse",
+  "fr": "s'amuser",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "doble",
+  "es": "doble",
+  "fr": "double",
+  "pos": "adj",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "doce",
+  "es": "doce",
+  "fr": "douze",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "docena",
+  "es": "docena",
+  "fr": "douzaine",
+  "pos": "n",
+  "gender": "f",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "documento",
+  "es": "documento",
+  "fr": "document",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "doler",
+  "es": "doler",
+  "fr": "faire mal",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "domingo",
+  "es": "domingo",
+  "fr": "dimanche",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "dorado",
+  "es": "dorado",
+  "fr": "doré",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "dormitorio",
+  "es": "dormitorio",
+  "fr": "chambre",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "ducha",
+  "es": "ducha",
+  "fr": "douche",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "ducharse",
+  "es": "ducharse",
+  "fr": "se doucher",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "duro",
+  "es": "duro",
+  "fr": "dur",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "efectivo",
+  "es": "efectivo",
+  "fr": "espèces",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "egoista",
+  "es": "egoísta",
+  "fr": "égoïste",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "elefante",
+  "es": "elefante",
+  "fr": "éléphant",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "elegir",
+  "es": "elegir",
+  "fr": "choisir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "emergencia",
+  "es": "emergencia",
+  "fr": "urgence",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "empeorar",
+  "es": "empeorar",
+  "fr": "empirer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "empresa",
+  "es": "empresa",
+  "fr": "entreprise",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "enamorado",
+  "es": "enamorado",
+  "fr": "amoureux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "encender",
+  "es": "encender",
+  "fr": "allumer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "enero",
+  "es": "enero",
+  "fr": "janvier",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "enfadado",
+  "es": "enfadado",
+  "fr": "fâché",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "enfermar",
+  "es": "enfermar",
+  "fr": "tomber malade",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "enfermedad",
+  "es": "enfermedad",
+  "fr": "maladie",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "enfermero",
+  "es": "enfermero",
+  "fr": "infirmier",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "enfriar",
+  "es": "enfriar",
+  "fr": "refroidir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "ensalada",
+  "es": "ensalada",
+  "fr": "salade",
+  "pos": "n",
+  "gender": "f",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "entrada",
+  "es": "entrada",
+  "fr": "entrée",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "entrenador",
+  "es": "entrenador",
+  "fr": "entraîneur",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "entrevista",
+  "es": "entrevista",
+  "fr": "entretien / interview",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "enviar",
+  "es": "enviar",
+  "fr": "envoyer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "equipaje",
+  "es": "equipaje",
+  "fr": "bagages",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "equipo",
+  "es": "equipo",
+  "fr": "équipe",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "esa",
+  "es": "esa",
+  "fr": "cette (là)",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "escalera",
+  "es": "escalera",
+  "fr": "escalier",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "escribir",
+  "es": "escribir",
+  "fr": "écrire",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "espalda",
+  "es": "espalda",
+  "fr": "dos",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "espejo",
+  "es": "espejo",
+  "fr": "miroir",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "esperanza",
+  "es": "esperanza",
+  "fr": "espoir",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "esposa",
+  "es": "esposa",
+  "fr": "épouse",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "esposo",
+  "es": "esposo",
+  "fr": "époux",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "esquina",
+  "es": "esquina",
+  "fr": "coin (de rue)",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "estacion",
+  "es": "estación",
+  "fr": "gare / saison",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "estanteria",
+  "es": "estantería",
+  "fr": "étagère",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "estomago",
+  "es": "estómago",
+  "fr": "estomac",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "estrecho",
+  "es": "estrecho",
+  "fr": "étroit",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "estrella",
+  "es": "estrella",
+  "fr": "étoile",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "estudiante",
+  "es": "estudiante",
+  "fr": "étudiant",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "estudiar",
+  "es": "estudiar",
+  "fr": "étudier",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "euro",
+  "es": "euro",
+  "fr": "euro",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "evitar",
+  "es": "evitar",
+  "fr": "éviter",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "examen",
+  "es": "examen",
+  "fr": "examen",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "explicar",
+  "es": "explicar",
+  "fr": "expliquer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "extranjero",
+  "es": "extranjero",
+  "fr": "étranger",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "falda",
+  "es": "falda",
+  "fr": "jupe",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "farmacia",
+  "es": "farmacia",
+  "fr": "pharmacie",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "febrero",
+  "es": "febrero",
+  "fr": "février",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "fecha",
+  "es": "fecha",
+  "fr": "date",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "felpudo",
+  "es": "felpudo",
+  "fr": "paillasson",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "feo",
+  "es": "feo",
+  "fr": "laid",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "fiebre",
+  "es": "fiebre",
+  "fr": "fièvre",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "flor",
+  "es": "flor",
+  "fr": "fleur",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "frase",
+  "es": "frase",
+  "fr": "phrase",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "fregadero",
+  "es": "fregadero",
+  "fr": "évier",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "fresa",
+  "es": "fresa",
+  "fr": "fraise",
+  "pos": "n",
+  "gender": "f",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "fresco",
+  "es": "fresco",
+  "fr": "frais",
+  "pos": "adj",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "frigorifico",
+  "es": "frigorífico",
+  "fr": "réfrigérateur",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "frio",
+  "es": "frío",
+  "fr": "froid",
+  "pos": "adj",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "frito",
+  "es": "frito",
+  "fr": "frit",
+  "pos": "adj",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "frontera",
+  "es": "frontera",
+  "fr": "frontière",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "fruta",
+  "es": "fruta",
+  "fr": "fruit",
+  "pos": "n",
+  "gender": "f",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "futbol",
+  "es": "fútbol",
+  "fr": "football",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "gafas",
+  "es": "gafas",
+  "fr": "lunettes",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "galleta",
+  "es": "galleta",
+  "fr": "biscuit",
+  "pos": "n",
+  "gender": "m",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "gallina",
+  "es": "gallina",
+  "fr": "poule",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "garaje",
+  "es": "garaje",
+  "fr": "garage",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "garganta",
+  "es": "garganta",
+  "fr": "gorge",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "gasolina",
+  "es": "gasolina",
+  "fr": "essence",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "gato",
+  "es": "gato",
+  "fr": "chat",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "generoso",
+  "es": "generoso",
+  "fr": "généreux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "gimnasio",
+  "es": "gimnasio",
+  "fr": "salle de sport",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ }
+]

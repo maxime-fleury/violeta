@@ -1,0 +1,139 @@
+# 01 — Bases : pronoms, déterminants, prépositions, adverbes, verbes essentiels
+# format: espagnol|français|catégorie   (n.m / n.f / v / adj / adv / pron / prep / conj / det / num / interj)
+yo|je|pron
+tú|tu (toi)|pron
+él|il / lui|pron
+ella|elle|pron
+nosotros|nous|pron
+vosotros|vous (pluriel familier)|pron
+ellos|ils|pron
+ellas|elles|pron
+me|me / moi|pron
+te|te / toi|pron
+se|se|pron
+nos|nous|pron
+le|lui|pron
+les|leur|pron
+lo|le (neutre) / cela|pron
+quién|qui|pron
+qué|que / quoi|pron
+cómo|comment|adv
+cuándo|quand|adv
+dónde|où|adv
+cuánto|combien|adv
+cuál|quel / lequel|pron
+mí|moi|pron
+ti|toi|pron
+algo|quelque chose|pron
+alguien|quelqu'un|pron
+nada|rien|pron
+nadie|personne|pron
+el|le / la (article)|det
+un|un|det
+una|une|det
+este|ce / ceci|det
+esta|cette|det
+ese|ce / cela|det
+esa|cette (là)|det
+aquel|cet (là-bas)|det
+esto|ceci|det
+eso|cela|det
+todo|tout|det
+otro|autre|det
+mismo|même|det
+cada|chaque|det
+algún|quelque|det
+ningún|aucun|det
+varios|plusieurs|det
+mi|mon|det
+tu|ton|det
+su|son|det
+nuestro|notre|det
+mío|mien (à moi)|det
+tuyo|tien (à toi)|det
+a|à|prep
+de|de|prep
+en|dans / en|prep
+con|avec|prep
+por|par / pour|prep
+para|pour|prep
+sin|sans|prep
+sobre|sur / au sujet de|prep
+entre|entre|prep
+hasta|jusqu'à|prep
+desde|depuis|prep
+durante|pendant|prep
+según|selon|prep
+contra|contre|prep
+hacia|vers|prep
+y|et|conj
+o|ou|conj
+pero|mais|conj
+sino|mais (plutôt)|conj
+porque|parce que|conj
+que|que|conj
+si|si|conj
+aunque|bien que|conj
+mientras|pendant que|conj
+cuando|quand|conj
+como|comme|conj
+no|non|adv
+sí|oui|adv
+muy|très|adv
+más|plus|adv
+menos|moins|adv
+bien|bien|adv
+mal|mal|adv
+ya|déjà|adv
+también|aussi|adv
+tampoco|non plus|adv
+siempre|toujours|adv
+nunca|jamais|adv
+aquí|ici|adv
+allí|là-bas|adv
+ahora|maintenant|adv
+luego|ensuite|adv
+después|après|adv
+antes|avant|adv
+hoy|aujourd'hui|adv
+todavía|encore|adv
+casi|presque|adv
+solo|seulement / seul|adv
+así|ainsi|adv
+además|en plus|adv
+entonces|alors|adv
+quizá|peut-être|adv
+demasiado|trop|adv
+bastante|assez|adv
+poco|peu|adv
+mucho|beaucoup|adv
+pronto|bientôt|adv
+cerca|près|adv
+lejos|loin|adv
+ser|être (essence)|v
+estar|être (état)|v
+haber|avoir (auxiliaire)|v
+tener|avoir|v
+hacer|faire|v
+ir|aller|v
+venir|venir|v
+decir|dire|v
+ver|voir|v
+dar|donner|v
+saber|savoir|v
+poder|pouvoir|v
+querer|vouloir / aimer|v
+deber|devoir|v
+hablar|parler|v
+llamar|appeler|v
+hola|salut|interj
+gracias|merci|interj
+adiós|au revoir|interj
+español|espagnol (langue et nationalité)|n.m
+favor|faveur (por favor : s'il te plaît)|n.m
+la|la (article défini)|det
+los|les (article défini masculin pluriel)|det
+las|les (article défini féminin pluriel)|det
+hay|il y a|v
+del|du (de + el)|prep
+al|au (à + el)|prep

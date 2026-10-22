@@ -1,0 +1,17 @@
+{
+  "name": "violeta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cours d'espagnol pour francophones : 76 dialogues, 16 compréhensions orales, 19 points de grammaire et 6 tests de niveau, hors ligne et sans build.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "check": "bun scripts/build-lexicon.mjs --check && bun scripts/validate-content.mjs",
+    "validate": "bun scripts/validate-content.mjs",
+    "lexicon": "bun scripts/build-lexicon.mjs"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Violeta — apprendre l'espagnol autrement</title>
+    <meta name="description" content="Apprendre les 1 000 mots espagnols les plus utiles avec des dialogues, des jeux de mémoire et un appartement interactif." />
+    <meta name="theme-color" content="#f6f1ea" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>
+      /* Applique le thème avant le premier rendu pour éviter un flash clair. */
+      (function () {
+        try {
+          var pref = localStorage.getItem("violeta.theme") || "system";
+          var dark = pref === "dark" || (pref === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          document.documentElement.dataset.theme = dark ? "dark" : "light";
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", dark ? "#14111c" : "#f6f1ea");
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#view">Aller au contenu</a>
+    <div class="app">
+      <aside class="sidebar" aria-label="Navigation principale">
+        <a class="brand" href="#/">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          <span class="brand-text"><strong>Violeta</strong><small>l'espagnol qui se vit</small></span>
+        </a>
+        <nav class="nav" id="nav"></nav>
+        <div class="sidebar-foot">
+          <div class="sidebar-progress" id="sidebar-progress"></div>
+          <div class="sidebar-actions" id="sidebar-actions"></div>
+          <a class="nav-link nav-settings" href="#/reglages" data-nav="settings">
+            <span class="nav-icon" data-icon="settings"></span><span>Réglages</span>
+          </a>
+        </div>
+      </aside>
+
+      <div class="shell">
+        <header class="topbar">
+          <a class="brand brand--compact" href="#/">
+            <span class="brand-mark" aria-hidden="true">V</span>
+            <span class="brand-text"><strong>Violeta</strong></span>
+          </a>
+          <div class="topbar-right" id="topbar-right"></div>
+        </header>
+        <main id="view" tabindex="-1" aria-live="polite"></main>
+        <nav class="tabbar" id="tabbar" aria-label="Navigation rapide"></nav>
+      </div>
+    </div>
+
+    <div id="tooltip" class="word-tooltip" role="tooltip" hidden></div>
+    <div id="modal-root"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>

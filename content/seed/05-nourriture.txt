@@ -1,0 +1,109 @@
+# 05 — Nourriture, boissons, cuisine, restaurant
+comida|nourriture / repas|n.f
+alimento|aliment|n.m
+desayuno|petit-déjeuner|n.m
+almuerzo|déjeuner|n.m
+hambre|faim|n.f
+sed|soif|n.f
+agua|eau|n.f
+leche|lait|n.m
+café|café|n.m
+té|thé|n.m
+zumo|jus|n.m
+vino|vin|n.m
+cerveza|bière|n.f
+refresco|soda|n.m
+pan|pain|n.m
+mantequilla|beurre|n.f
+queso|fromage|n.m
+huevo|œuf|n.m
+carne|viande|n.f
+pollo|poulet|n.m
+pescado|poisson (nourriture)|n.m
+cerdo|porc|n.m
+ternera|veau / bœuf|n.f
+jamón|jambon|n.m
+salchicha|saucisse|n.f
+arroz|riz|n.m
+pasta|pâtes|n.f
+sopa|soupe|n.f
+ensalada|salade|n.f
+verdura|légume|n.f
+fruta|fruit|n.f
+manzana|pomme|n.f
+plátano|banane|n.m
+naranja|orange|n.f
+limón|citron|n.m
+fresa|fraise|n.f
+uva|raisin|n.f
+melocotón|pêche (fruit)|n.m
+pera|poire|n.f
+sandía|pastèque|n.f
+melón|melon|n.m
+piña|ananas|n.m
+tomate|tomate|n.m
+patata|pomme de terre|n.f
+cebolla|oignon|n.f
+ajo|ail|n.m
+zanahoria|carotte|n.f
+pimiento|poivron|n.m
+lechuga|laitue|n.f
+pepino|concombre|n.m
+judía|haricot|n.f
+guisante|petit pois|n.m
+maíz|maïs|n.m
+seta|champignon|n.f
+aceite|huile|n.m
+sal|sel|n.f
+azúcar|sucre|n.m
+pimienta|poivre|n.m
+harina|farine|n.f
+miel|miel|n.f
+chocolate|chocolat|n.m
+helado|glace|n.m
+tarta|gâteau|n.f
+galleta|biscuit|n.f
+dulce|sucré / sucrerie|adj
+postre|dessert|n.m
+bocadillo|sandwich|n.m
+tortilla|omelette|n.f
+paella|paella|n.f
+tapa|tapas|n.f
+aceituna|olive|n.f
+nuez|noix|n.f
+yogur|yaourt|n.m
+cereza|cerise|n.f
+ciruela|prune|n.f
+aguacate|avocat|n.m
+calabaza|courge|n.f
+berenjena|aubergine|n.f
+col|chou|n.f
+espinaca|épinard|n.f
+brócoli|brocoli|n.m
+marisco|fruits de mer|n.m
+gamba|crevette|n.f
+atún|thon|n.m
+sardina|sardine|n.f
+cordero|agneau|n.m
+conejo|lapin|n.m
+pavo|dinde|n.m
+carta|menu / lettre|n.f
+menú|menu|n.m
+camarero|serveur|n.m
+cuenta|addition / compte|n.f
+propina|pourboire|n.f
+reserva|réservation|n.f
+sabor|saveur|n.m
+olor|odeur|n.m
+salado|salé|adj
+amargo|amer|adj
+picante|épicé|adj
+rico|savoureux / riche|adj
+delicioso|délicieux|adj
+fresco|frais|adj
+caliente|chaud|adj
+frío|froid|adj
+crudo|cru|adj
+cocido|cuit|adj
+frito|frit|adj
+asado|rôti|adj

@@ -1,0 +1,1065 @@
+[
+ {
+  "id": "alli",
+  "es": "allí",
+  "fr": "là-bas",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "hora",
+  "es": "hora",
+  "fr": "heure",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "mujer",
+  "es": "mujer",
+  "fr": "femme",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "importar",
+  "es": "importar",
+  "fr": "importer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "oir",
+  "es": "oír",
+  "fr": "entendre",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "problema",
+  "es": "problema",
+  "fr": "problème",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "cada",
+  "es": "cada",
+  "fr": "chaque",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "quiza",
+  "es": "quizá",
+  "fr": "peut-être",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "morir",
+  "es": "morir",
+  "fr": "mourir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "salir",
+  "es": "salir",
+  "fr": "sortir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "demasiado",
+  "es": "demasiado",
+  "fr": "trop",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "familia",
+  "es": "familia",
+  "fr": "famille",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "cabeza",
+  "es": "cabeza",
+  "fr": "tête",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "chica",
+  "es": "chica",
+  "fr": "fille",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "entre",
+  "es": "entre",
+  "fr": "entre",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "minuto",
+  "es": "minuto",
+  "fr": "minute",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "algun",
+  "es": "algún",
+  "fr": "quelque",
+  "pos": "det",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "serio",
+  "es": "serio",
+  "fr": "sérieux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "amor",
+  "es": "amor",
+  "fr": "amour",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "puerta",
+  "es": "puerta",
+  "fr": "porte",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "rapido",
+  "es": "rápido",
+  "fr": "rapide",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "cuenta",
+  "es": "cuenta",
+  "fr": "addition / compte",
+  "pos": "n",
+  "gender": "f",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "pasado",
+  "es": "pasado",
+  "fr": "passé",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "pensar",
+  "es": "pensar",
+  "fr": "penser",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "todavia",
+  "es": "todavía",
+  "fr": "encore",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "hermano",
+  "es": "hermano",
+  "fr": "frère",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "casi",
+  "es": "casi",
+  "fr": "presque",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "chico",
+  "es": "chico",
+  "fr": "garçon",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "dentro",
+  "es": "dentro",
+  "fr": "dedans",
+  "pos": "adv",
+  "theme": "maison",
+  "level": "A2"
+ },
+ {
+  "id": "contra",
+  "es": "contra",
+  "fr": "contre",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "caminar",
+  "es": "caminar",
+  "fr": "marcher",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "ayudar",
+  "es": "ayudar",
+  "fr": "aider",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "hacia",
+  "es": "hacia",
+  "fr": "vers",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "miedo",
+  "es": "miedo",
+  "fr": "peur",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "primero",
+  "es": "primero",
+  "fr": "premier",
+  "pos": "adj",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "nino",
+  "es": "niño",
+  "fr": "enfant (garçon)",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "historia",
+  "es": "historia",
+  "fr": "histoire",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "mientras",
+  "es": "mientras",
+  "fr": "pendant que",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "ciudad",
+  "es": "ciudad",
+  "fr": "ville",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "esperar",
+  "es": "esperar",
+  "fr": "attendre / espérer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "cuanto",
+  "es": "cuánto",
+  "fr": "combien",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "pronto",
+  "es": "pronto",
+  "fr": "bientôt",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "viejo",
+  "es": "viejo",
+  "fr": "vieux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "dejar",
+  "es": "dejar",
+  "fr": "laisser",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "muerte",
+  "es": "muerte",
+  "fr": "mort",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "mano",
+  "es": "mano",
+  "fr": "main",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "dar",
+  "es": "dar",
+  "fr": "donner",
+  "pos": "v",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "guerra",
+  "es": "guerra",
+  "fr": "guerre",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "semana",
+  "es": "semana",
+  "fr": "semaine",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cual",
+  "es": "cuál",
+  "fr": "quel / lequel",
+  "pos": "pron",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "volver",
+  "es": "volver",
+  "fr": "revenir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "tomar",
+  "es": "tomar",
+  "fr": "prendre / boire",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "agua",
+  "es": "agua",
+  "fr": "eau",
+  "pos": "n",
+  "gender": "f",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "entender",
+  "es": "entender",
+  "fr": "comprendre",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "persona",
+  "es": "persona",
+  "fr": "personne",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "listo",
+  "es": "listo",
+  "fr": "prêt / malin",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "seguir",
+  "es": "seguir",
+  "fr": "suivre / continuer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "jefe",
+  "es": "jefe",
+  "fr": "chef",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "feliz",
+  "es": "feliz",
+  "fr": "heureux",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "sangre",
+  "es": "sangre",
+  "fr": "sang",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "bajo",
+  "es": "bajo",
+  "fr": "bas / petit",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "importante",
+  "es": "importante",
+  "fr": "important",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "ojo",
+  "es": "ojo",
+  "fr": "œil",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "escuchar",
+  "es": "escuchar",
+  "fr": "écouter",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "corazon",
+  "es": "corazón",
+  "fr": "cœur",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "durante",
+  "es": "durante",
+  "fr": "pendant",
+  "pos": "prep",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "hija",
+  "es": "hija",
+  "fr": "fille (enfant)",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "llegar",
+  "es": "llegar",
+  "fr": "arriver",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "senora",
+  "es": "señora",
+  "fr": "madame",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "tierra",
+  "es": "tierra",
+  "fr": "terre",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cara",
+  "es": "cara",
+  "fr": "visage",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "jugar",
+  "es": "jugar",
+  "fr": "jouer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "cinco",
+  "es": "cinco",
+  "fr": "cinq",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cuando-interrog",
+  "es": "cuándo",
+  "fr": "quand",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "pequeno",
+  "es": "pequeño",
+  "fr": "petit",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "conocer",
+  "es": "conocer",
+  "fr": "connaître",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "clase",
+  "es": "clase",
+  "fr": "cours / classe",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "segundo",
+  "es": "segundo",
+  "fr": "seconde",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "aunque",
+  "es": "aunque",
+  "fr": "bien que",
+  "pos": "conj",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "comer",
+  "es": "comer",
+  "fr": "manger",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "cuerpo",
+  "es": "cuerpo",
+  "fr": "corps",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "encontrar",
+  "es": "encontrar",
+  "fr": "trouver",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "fuerte",
+  "es": "fuerte",
+  "fr": "fort",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "preguntar",
+  "es": "preguntar",
+  "fr": "demander",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "cuatro",
+  "es": "cuatro",
+  "fr": "quatre",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "alto",
+  "es": "alto",
+  "fr": "grand / haut",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "numero",
+  "es": "número",
+  "fr": "numéro / nombre",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "ultimo",
+  "es": "último",
+  "fr": "dernier",
+  "pos": "adj",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "dificil",
+  "es": "difícil",
+  "fr": "difficile",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "vivir",
+  "es": "vivir",
+  "fr": "vivre",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "malo",
+  "es": "malo",
+  "fr": "mauvais",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "quedar",
+  "es": "quedar",
+  "fr": "rester / convenir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "fiesta",
+  "es": "fiesta",
+  "fr": "fête",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "vino",
+  "es": "vino",
+  "fr": "vin",
+  "pos": "n",
+  "gender": "m",
+  "theme": "nourriture",
+  "level": "A1"
+ },
+ {
+  "id": "mes",
+  "es": "mes",
+  "fr": "mois",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cuarto",
+  "es": "cuarto",
+  "fr": "pièce / chambre",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "escuela",
+  "es": "escuela",
+  "fr": "école",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "tio",
+  "es": "tío",
+  "fr": "oncle",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "posible",
+  "es": "posible",
+  "fr": "possible",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "facil",
+  "es": "fácil",
+  "fr": "facile",
+  "pos": "adj",
+  "theme": "adjectifs",
+  "level": "A2"
+ },
+ {
+  "id": "luz",
+  "es": "luz",
+  "fr": "lumière",
+  "pos": "n",
+  "gender": "f",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "tratar",
+  "es": "tratar",
+  "fr": "traiter / essayer de",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "hermana",
+  "es": "hermana",
+  "fr": "sœur",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "bastante",
+  "es": "bastante",
+  "fr": "assez",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "telefono",
+  "es": "teléfono",
+  "fr": "téléphone",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "perro",
+  "es": "perro",
+  "fr": "chien",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "fuego",
+  "es": "fuego",
+  "fr": "feu",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "tampoco",
+  "es": "tampoco",
+  "fr": "non plus",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "buscar",
+  "es": "buscar",
+  "fr": "chercher",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "paz",
+  "es": "paz",
+  "fr": "paix",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "recordar",
+  "es": "recordar",
+  "fr": "se souvenir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "par",
+  "es": "par",
+  "fr": "pair",
+  "pos": "n",
+  "gender": "m",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "joven",
+  "es": "joven",
+  "fr": "jeune",
+  "pos": "adj",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "pueblo",
+  "es": "pueblo",
+  "fr": "village / peuple",
+  "pos": "n",
+  "gender": "m",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "bebe",
+  "es": "bebé",
+  "fr": "bébé",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "lejos",
+  "es": "lejos",
+  "fr": "loin",
+  "pos": "adv",
+  "theme": "bases",
+  "level": "A1"
+ },
+ {
+  "id": "sentir",
+  "es": "sentir",
+  "fr": "sentir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "dormir",
+  "es": "dormir",
+  "fr": "dormir",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "palabra",
+  "es": "palabra",
+  "fr": "mot",
+  "pos": "n",
+  "gender": "f",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "pais",
+  "es": "país",
+  "fr": "pays",
+  "pos": "n",
+  "gender": "m",
+  "theme": "societe",
+  "level": "A2"
+ },
+ {
+  "id": "seis",
+  "es": "seis",
+  "fr": "six",
+  "pos": "num",
+  "theme": "temps",
+  "level": "A1"
+ },
+ {
+  "id": "cama",
+  "es": "cama",
+  "fr": "lit",
+  "pos": "n",
+  "gender": "f",
+  "theme": "maison",
+  "level": "A1"
+ },
+ {
+  "id": "senorita",
+  "es": "señorita",
+  "fr": "mademoiselle",
+  "pos": "n",
+  "gender": "f",
+  "theme": "personnes",
+  "level": "A1"
+ },
+ {
+  "id": "cambiar",
+  "es": "cambiar",
+  "fr": "changer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "faltar",
+  "es": "faltar",
+  "fr": "manquer",
+  "pos": "v",
+  "theme": "verbes",
+  "level": "A1"
+ },
+ {
+  "id": "hospital",
+  "es": "hospital",
+  "fr": "hôpital",
+  "pos": "n",
+  "gender": "m",
+  "theme": "personnes",
+  "level": "A1"
+ }
+]

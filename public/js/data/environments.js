@@ -1,0 +1,697 @@
+/**
+ * Environnements interactifs.
+ *
+ * Chaque pièce est dessinée en SVG. Les objets d'une pièce sont définis une
+ * seule fois puis réutilisés : un niveau choisit dans `focus` les objets qui
+ * deviennent interactifs. La zone cliquable (`hit`) épouse la silhouette de
+ * l'objet dessiné, elle n'est pas un bouton posé au hasard.
+ */
+import { EXTRA_ENVIRONMENTS } from "./environments-extra.js";
+
+// --- primitives SVG ---------------------------------------------------------
+const R = (x, y, w, h, fill, rx = 6, extra = "") =>
+  `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" ${extra}/>`;
+const C = (cx, cy, r, fill, extra = "") => `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" ${extra}/>`;
+const E = (cx, cy, rx, ry, fill, extra = "") => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${fill}" ${extra}/>`;
+const P = (d, fill, extra = "") => `<path d="${d}" fill="${fill}" ${extra}/>`;
+const S = (x1, y1, x2, y2, stroke, w = 3, extra = "") =>
+  `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${stroke}" stroke-width="${w}" stroke-linecap="round" ${extra}/>`;
+const G = (...parts) => parts.join("");
+const SHADOW = (cx, cy, rx, ry) => E(cx, cy, rx, ry, "#3b2a1a12");
+const obj = (id, es, fr, art, hit, labelAt) => ({ id, es, fr, art, hit, labelAt });
+
+// --- salon ------------------------------------------------------------------
+const SALON_BG = G(
+  R(0, 0, 800, 372, "#f4eadf", 0),
+  R(0, 372, 800, 148, "#e4cbb0", 0),
+  S(0, 372, 800, 372, "#cdb094", 4),
+  R(70, 72, 180, 156, "#d7ecf3", 14),
+  S(160, 72, 160, 228, "#ffffff", 7),
+  S(70, 150, 250, 150, "#ffffff", 7),
+  R(64, 64, 192, 10, "#b99c7e", 5),
+  E(420, 478, 230, 34, "#d3b596"),
+);
+
+const SALON_OBJECTS = [
+  obj("sofa", "el sofá", "le canapé",
+    G(SHADOW(330, 412, 175, 22),
+      R(222, 268, 218, 62, "#9282d6", 20),
+      R(196, 312, 270, 74, "#7c5cff", 22),
+      R(178, 294, 34, 96, "#6d4dff", 16),
+      R(444, 294, 34, 96, "#6d4dff", 16),
+      R(204, 388, 16, 22, "#5b3fd6", 5), R(444, 388, 16, 22, "#5b3fd6", 5)),
+    R(170, 260, 316, 156, "transparent"), { x: 330, y: 258 }),
+  obj("mesa", "la mesa", "la table basse",
+    G(SHADOW(392, 462, 120, 16),
+      R(300, 398, 186, 18, "#c99f74", 8),
+      S(320, 416, 316, 462, "#a97e56", 8), S(468, 416, 472, 462, "#a97e56", 8)),
+    R(292, 390, 202, 82, "transparent"), { x: 392, y: 386 }),
+  obj("television", "la televisión", "la télévision",
+    G(R(556, 214, 184, 112, "#2f2a3d", 10),
+      R(566, 224, 164, 84, "#565073", 6),
+      R(646, 318, 4, 24, "#2f2a3d"), R(612, 342, 72, 10, "#2f2a3d", 5)),
+    R(550, 208, 196, 148, "transparent"), { x: 648, y: 206 }),
+  obj("estanteria", "la estantería", "l'étagère",
+    G(R(556, 84, 190, 214, "#cfae8a", 10),
+      R(566, 96, 170, 10, "#efdcc5"), R(566, 154, 170, 10, "#efdcc5"), R(566, 212, 170, 10, "#efdcc5"),
+      R(578, 110, 16, 42, "#e5484d", 2), R(600, 110, 12, 42, "#f5c518", 2), R(620, 110, 20, 42, "#3b82f6", 2),
+      R(578, 168, 26, 42, "#22a06b", 2), R(614, 168, 14, 42, "#8b5cf6", 2),
+      R(578, 228, 34, 34, "#ec4899", 4), R(622, 228, 20, 34, "#f97316", 3)),
+    R(550, 78, 202, 226, "transparent"), { x: 648, y: 74 }),
+  obj("cuadro", "el cuadro", "le tableau",
+    G(R(320, 74, 132, 92, "#b98d5f", 6),
+      R(330, 84, 112, 72, "#f2e6d3"),
+      C(366, 112, 13, "#f5c518"), P("M330 156 L372 112 L404 144 L422 126 L442 156 Z", "#22a06b")),
+    R(316, 70, 140, 100, "transparent"), { x: 386, y: 66 }),
+  obj("lampara", "la lámpara", "la lampe",
+    G(SHADOW(92, 462, 38, 12),
+      E(92, 458, 30, 9, "#a97e56"), S(92, 330, 92, 456, "#a97e56", 6),
+      P("M58 270 L126 270 L140 330 L44 330 Z", "#f4c76b"),
+      E(92, 330, 48, 7, "#e9b756")),
+    R(38, 264, 108, 202, "transparent"), { x: 92, y: 258 }),
+  obj("alfombra", "la alfombra", "le tapis",
+    G(E(392, 476, 200, 30, "#d9b596"), E(392, 476, 168, 22, "#efd3b5"), E(392, 476, 120, 14, "#d9b596")),
+    E(392, 476, 202, 34, "transparent"), { x: 392, y: 500 }),
+  obj("reloj", "el reloj", "l'horloge",
+    G(C(500, 104, 32, "#fdfbf7"), C(500, 104, 26, "#ffffff"), S(500, 104, 500, 86, "#3a3546", 3), S(500, 104, 513, 111, "#3a3546", 2), C(500, 104, 3, "#3a3546")),
+    R(462, 66, 76, 76, "transparent"), { x: 500, y: 62 }),
+  obj("mando", "el mando", "la télécommande",
+    G(R(356, 380, 44, 16, "#3a3546", 6), C(390, 386, 4, "#e5484d"), C(374, 388, 3, "#9aa7ad")),
+    R(344, 368, 70, 36, "transparent"), { x: 378, y: 364 }),
+  obj("planta", "la planta", "la plante",
+    G(E(716, 444, 28, 8, "#b98d5f"), R(698, 400, 36, 44, "#d9b596", 6),
+      P("M716 400 q-26 -34 -8 -58 q22 16 8 58", "#22a06b"), P("M716 400 q28 -30 50 -44 q4 30 -50 44", "#2fb47c")),
+    R(674, 334, 84, 118, "transparent"), { x: 716, y: 330 }),
+  obj("libro", "el libro", "le livre",
+    G(R(660, 166, 54, 10, "#e5484d", 2), R(660, 176, 54, 5, "#fdf8ee"), R(664, 181, 46, 9, "#f5f2e8")),
+    R(650, 154, 74, 44, "transparent"), { x: 687, y: 150 }),
+  obj("vaso", "el vaso", "le verre",
+    G(P("M420 370 L444 370 L440 398 L424 398 Z", "#cfe6ef"), E(432, 398, 8, 3, "#b7dbe6")),
+    R(410, 358, 48, 46, "transparent"), { x: 432, y: 354 }),
+  obj("taza", "la taza", "la tasse",
+    G(P("M452 372 L476 372 L472 398 L456 398 Z", "#ffffff"),
+      P("M476 376 q12 2 10 10 q-2 8 -12 6", "none", 'stroke="#ffffff" stroke-width="4"')),
+    R(444, 360, 54, 44, "transparent"), { x: 468, y: 356 }),
+  obj("manta", "la manta", "la couverture",
+    G(P("M250 300 q60 -18 120 0 l16 54 q-70 22 -140 0 Z", "#a8b8e8"), S(262, 340, 372, 340, "#8d9fd6", 3)),
+    R(240, 288, 152, 76, "transparent"), { x: 316, y: 284 }),
+  obj("flor", "la flor", "la fleur",
+    G(R(694, 214, 16, 26, "#d9eef1", 4), S(702, 214, 702, 188, "#22a06b", 2),
+      C(702, 182, 8, "#ec4899"), C(692, 188, 6, "#f472b6"), C(712, 188, 6, "#f472b6")),
+    R(680, 168, 44, 80, "transparent"), { x: 702, y: 164 }),
+];
+
+const salonLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: SALON_BG, objects: SALON_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- cuisine ----------------------------------------------------------------
+const COCINA_BG = G(
+  R(0, 0, 800, 368, "#f1f0e6", 0),
+  R(0, 368, 800, 152, "#dfc7ab", 0),
+  S(0, 368, 800, 368, "#c8ae91", 4),
+  R(36, 58, 120, 110, "#d7ecf3", 10),
+  S(96, 58, 96, 168, "#fff", 5), S(36, 113, 156, 113, "#fff", 5),
+  // crédence
+  R(0, 168, 420, 8, "#ffffff66", 0),
+  // plan de travail
+  R(0, 300, 470, 24, "#c7a17c", 4),
+  R(0, 324, 470, 128, "#e8d6c1", 0),
+  // placards hauts
+  R(300, 52, 220, 96, "#f7f2ea", 8), S(410, 52, 410, 148, "#d9c9b6", 3),
+  S(392, 88, 392, 112, "#b7a48f", 4), S(428, 88, 428, 112, "#b7a48f", 4),
+  // crédence carrelée
+  R(300, 168, 220, 132, "#e9e4d8", 0),
+);
+
+const COCINA_OBJECTS = [
+  obj("frigorifico", "el frigorífico", "le réfrigérateur",
+    G(SHADOW(636, 430, 96, 18),
+      R(548, 148, 176, 274, "#eef0f4", 14),
+      R(548, 148, 176, 104, "#e2e6ec", 14),
+      S(548, 252, 724, 252, "#c2c9d2", 4),
+      R(704, 186, 8, 42, "#a9b2bd", 4), R(704, 286, 8, 70, "#a9b2bd", 4),
+      C(566, 166, 5, "#22a06b")),
+    R(540, 140, 192, 286, "transparent"), { x: 636, y: 136 }),
+  obj("horno", "el horno", "le four",
+    G(R(300, 300, 150, 128, "#3a3546", 8),
+      R(314, 316, 122, 64, "#6c647c", 6),
+      R(320, 322, 110, 52, "#8d8598", 4),
+      C(320, 394, 8, "#d9d2c6"), C(344, 394, 8, "#d9d2c6"),
+      S(312, 408, 438, 408, "#c7bfd0", 6)),
+    R(296, 296, 158, 138, "transparent"), { x: 375, y: 292 }),
+  obj("microondas", "el microondas", "le micro-ondes",
+    G(R(310, 200, 150, 88, "#d8dce3", 8),
+      R(324, 212, 96, 64, "#5b5668", 5),
+      C(440, 220, 10, "#aab2bf"), C(440, 246, 10, "#aab2bf"), C(440, 272, 10, "#aab2bf")),
+    R(306, 196, 158, 96, "transparent"), { x: 379, y: 192 }),
+  obj("fregadero", "el fregadero", "l'évier",
+    G(R(60, 286, 190, 24, "#b9c2c9", 6),
+      R(76, 294, 158, 54, "#8f9aa3", 8), R(88, 300, 134, 42, "#aab5be", 6)),
+    R(56, 282, 198, 70, "transparent"), { x: 152, y: 278 }),
+  obj("grifo", "el grifo", "le robinet",
+    G(S(168, 286, 168, 246, "#8a939c", 8),
+      P("M168 246 Q168 226 194 226", "none", 'stroke="#8a939c" stroke-width="8" stroke-linecap="round"'),
+      C(168, 286, 8, "#aab5be")),
+    R(148, 214, 70, 86, "transparent"), { x: 190, y: 210 }),
+  obj("mesa", "la mesa", "la table",
+    G(SHADOW(205, 480, 150, 16),
+      R(64, 386, 284, 18, "#c99f74", 8),
+      S(92, 404, 86, 478, "#a97e56", 8), S(320, 404, 326, 478, "#a97e56", 8)),
+    R(56, 378, 300, 110, "transparent"), { x: 205, y: 374 }),
+  obj("silla", "la silla", "la chaise",
+    G(SHADOW(448, 476, 48, 12),
+      R(408, 372, 78, 16, "#b98d5f", 6),
+      R(408, 388, 10, 82, "#8f6740"), R(474, 388, 10, 82, "#8f6740"),
+      R(408, 300, 12, 84, "#a97e56", 5), R(420, 300, 58, 10, "#a97e56", 5)),
+    R(398, 294, 98, 182, "transparent"), { x: 448, y: 290 }),
+  obj("armario", "el armario", "le placard",
+    G(R(538, 60, 220, 98, "#f7f2ea", 8),
+      S(648, 60, 648, 158, "#d9c9b6", 3),
+      S(620, 96, 620, 136, "#b7a48f", 5), S(676, 96, 676, 136, "#b7a48f", 5)),
+    R(530, 54, 236, 110, "transparent"), { x: 648, y: 50 }),
+  obj("plato", "el plato", "l'assiette",
+    G(E(126, 384, 28, 9, "#ffffff"), E(126, 383, 20, 6, "#e7ded2")),
+    R(94, 360, 64, 40, "transparent"), { x: 126, y: 356 }),
+  obj("tenedor", "el tenedor", "la fourchette",
+    G(S(182, 380, 182, 360, "#9aa7ad", 4), S(176, 360, 176, 352, "#9aa7ad", 2), S(182, 360, 182, 352, "#9aa7ad", 2), S(188, 360, 188, 352, "#9aa7ad", 2)),
+    R(168, 342, 30, 48, "transparent"), { x: 183, y: 338 }),
+  obj("cuchillo", "el cuchillo", "le couteau",
+    G(P("M204 354 L212 354 L210 378 L206 378 Z", "#c9d2d8"), R(200, 378, 12, 10, "#3a3546", 2)),
+    R(192, 344, 30, 52, "transparent"), { x: 207, y: 340 }),
+  obj("cuchara", "la cuchara", "la cuillère",
+    G(E(234, 360, 7, 10, "#c9d2d8"), S(234, 368, 234, 388, "#c9d2d8", 3)),
+    R(220, 344, 30, 52, "transparent"), { x: 234, y: 340 }),
+  obj("vaso", "el vaso", "le verre",
+    G(P("M280 360 L300 360 L296 386 L284 386 Z", "#cfe6ef")),
+    R(272, 350, 36, 44, "transparent"), { x: 290, y: 346 }),
+  obj("taza", "la taza", "la tasse",
+    G(P("M312 362 L334 362 L330 386 L316 386 Z", "#ffffff"),
+      P("M334 366 q10 2 8 9 q-2 7 -10 5", "none", 'stroke="#ffffff" stroke-width="4"')),
+    R(304, 352, 46, 42, "transparent"), { x: 328, y: 348 }),
+  obj("olla", "la olla", "la casserole",
+    G(R(318, 266, 62, 34, "#8f9aa3", 6), E(349, 266, 31, 7, "#aab5be"),
+      S(310, 276, 318, 276, "#6b7783", 5), S(388, 276, 380, 276, "#6b7783", 5),
+      C(349, 258, 4, "#3a3546")),
+    R(306, 248, 90, 60, "transparent"), { x: 349, y: 244 }),
+  obj("sarten", "la sartén", "la poêle",
+    G(E(414, 288, 34, 10, "#3a3546"), S(446, 288, 470, 280, "#6b7783", 6),
+      E(414, 286, 26, 6, "#565073")),
+    R(380, 268, 96, 34, "transparent"), { x: 414, y: 264 }),
+  obj("manzana", "la manzana", "la pomme",
+    G(C(290, 370, 14, "#e5484d"), S(290, 356, 293, 348, "#22a06b", 2), P("M293 348 q10 -5 13 3 q-10 4 -13 -3", "#22a06b")),
+    R(272, 346, 40, 36, "transparent"), { x: 290, y: 342 }),
+  obj("pan", "el pan", "le pain",
+    G(E(100, 376, 34, 14, "#dcb787"), S(84, 372, 92, 364, "#b98d5f", 3), S(104, 368, 112, 360, "#b98d5f", 3), S(120, 372, 128, 366, "#b98d5f", 3)),
+    R(62, 354, 80, 34, "transparent"), { x: 100, y: 350 }),
+  obj("leche", "la leche", "le lait",
+    G(R(150, 340, 32, 46, "#f7f5ef", 4), P("M150 340 L182 340 L174 330 L158 330 Z", "#e2ddd0"), R(156, 356, 20, 14, "#3b82f6", 3)),
+    R(144, 324, 44, 64, "transparent"), { x: 166, y: 320 }),
+  obj("huevo", "el huevo", "l'œuf",
+    G(E(208, 376, 13, 10, "#fdf8ee"), C(208, 375, 5, "#f5c518")),
+    R(192, 362, 32, 28, "transparent"), { x: 208, y: 358 }),
+  obj("queso", "el queso", "le fromage",
+    G(P("M232 384 L260 384 L260 366 L246 358 Z", "#f5c518"), P("M246 358 L260 366 L260 384 L248 376 Z", "#e0ad00"), C(244, 374, 3, "#f7e2a0")),
+    R(224, 352, 44, 38, "transparent"), { x: 246, y: 348 }),
+  obj("tomate", "el tomate", "la tomate",
+    G(C(320, 374, 12, "#e5484d"), S(320, 362, 320, 354, "#22a06b", 2), P("M320 358 q-8 -4 -10 1 q7 4 10 -1", "#22a06b")),
+    R(304, 352, 34, 32, "transparent"), { x: 320, y: 348 }),
+  obj("cebolla", "la cebolla", "l'oignon",
+    G(C(70, 376, 14, "#e8d5b0"), S(70, 362, 70, 354, "#b9a37a", 2),
+      P("M60 372 q10 -8 20 0", "none", 'stroke="#c9b48a" stroke-width="2"')),
+    R(52, 352, 38, 34, "transparent"), { x: 70, y: 348 }),
+  obj("botella", "la botella", "la bouteille",
+    G(R(44, 340, 16, 46, "#7fb7a8", 5), R(49, 322, 6, 20, "#7fb7a8", 2), R(46, 352, 12, 14, "#fdf8ee", 2)),
+    R(34, 314, 36, 76, "transparent"), { x: 52, y: 310 }),
+];
+
+const cocinaLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: COCINA_BG, objects: COCINA_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- chambre ----------------------------------------------------------------
+const DORM_BG = G(
+  R(0, 0, 800, 370, "#eee5d8", 0),
+  R(0, 370, 800, 150, "#dcc0a2", 0),
+  S(0, 370, 800, 370, "#c4a688", 4),
+  R(552, 62, 170, 132, "#d7ecf3", 12),
+  S(637, 62, 637, 194, "#fff", 6), S(552, 128, 722, 128, "#fff", 6),
+  R(546, 54, 182, 10, "#b99c7e", 5),
+  E(350, 486, 220, 30, "#d3b596"),
+);
+
+const DORM_OBJECTS = [
+  obj("cama", "la cama", "le lit",
+    G(SHADOW(330, 458, 220, 24),
+      R(160, 250, 40, 190, "#b08a63", 10),
+      R(160, 300, 380, 120, "#f3ede3", 12),
+      R(200, 316, 330, 104, "#b9a7ef", 16),
+      R(188, 292, 96, 56, "#ffffff", 12),
+      R(160, 420, 380, 12, "#a97e56", 6),
+      S(180, 432, 180, 466, "#8f6740", 8), S(520, 432, 520, 466, "#8f6740", 8)),
+    R(150, 240, 400, 240, "transparent"), { x: 330, y: 236 }),
+  obj("mesilla", "la mesilla", "la table de chevet",
+    G(R(552, 330, 96, 66, "#c99f74", 8),
+      R(560, 342, 80, 18, "#b98d5f", 4),
+      C(600, 380, 6, "#8f6740"),
+      S(560, 396, 560, 432, "#a97e56", 6), S(640, 396, 640, 432, "#a97e56", 6)),
+    R(544, 322, 112, 118, "transparent"), { x: 600, y: 318 }),
+  obj("lampara", "la lámpara", "la lampe",
+    G(S(598, 300, 598, 330, "#8f6740", 5),
+      P("M572 272 L624 272 L634 302 L562 302 Z", "#f4c76b"),
+      E(598, 302, 36, 6, "#e9b756")),
+    R(552, 262, 92, 74, "transparent"), { x: 598, y: 258 }),
+  obj("armario", "el armario", "l'armoire",
+    G(R(64, 110, 170, 286, "#c99f74", 10),
+      S(149, 110, 149, 396, "#a97e56", 4),
+      C(136, 258, 5, "#6d4dff"), C(162, 258, 5, "#6d4dff"),
+      R(76, 122, 62, 8, "#b98d5f"), R(160, 122, 62, 8, "#b98d5f")),
+    R(56, 102, 186, 302, "transparent"), { x: 149, y: 98 }),
+  obj("ventana", "la ventana", "la fenêtre",
+    G(R(552, 62, 170, 132, "#d7ecf3", 10),
+      S(637, 62, 637, 194, "#fff", 6), S(552, 128, 722, 128, "#fff", 6),
+      R(546, 54, 182, 10, "#b99c7e", 5)),
+    R(540, 48, 196, 158, "transparent"), { x: 637, y: 44 }),
+  obj("cuadro", "el cuadro", "le tableau",
+    G(R(292, 82, 110, 76, "#b98d5f", 5), R(302, 92, 90, 56, "#efe3cf"),
+      C(330, 112, 10, "#ec4899"), P("M302 148 L342 108 L378 140 L392 126 L392 148 Z", "#8b5cf6")),
+    R(286, 76, 122, 88, "transparent"), { x: 347, y: 72 }),
+  obj("alfombra", "la alfombra", "le tapis",
+    G(E(400, 486, 190, 26, "#c7a6b8"), E(400, 486, 150, 18, "#e8cede")),
+    E(400, 486, 192, 30, "transparent"), { x: 400, y: 506 }),
+  obj("reloj", "el reloj", "le réveil",
+    G(C(596, 420, 22, "#f7f2ea"), C(596, 420, 17, "#ffffff"), S(596, 420, 596, 408, "#3a3546", 3), S(596, 420, 606, 424, "#3a3546", 3)),
+    C(596, 420, 30, "transparent"), { x: 596, y: 396 }),
+];
+
+const dormLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: DORM_BG, objects: DORM_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- salle de bain ----------------------------------------------------------
+const BANO_BG = G(
+  R(0, 0, 800, 368, "#e8f0ee", 0),
+  R(0, 368, 800, 152, "#d5c3b3", 0),
+  S(0, 368, 800, 368, "#bda99a", 4),
+  R(0, 0, 800, 160, "#f3f8f6", 0),
+  R(0, 160, 800, 6, "#cfe0dc", 0),
+  E(380, 476, 210, 26, "#cbb8a8"),
+);
+
+const BANO_OBJECTS = [
+  obj("banera", "la bañera", "la baignoire",
+    G(R(70, 288, 300, 132, "#fdfbf7", 22),
+      R(86, 304, 268, 96, "#d9eef1", 16),
+      S(70, 330, 370, 330, "#e5ddd2", 3),
+      C(354, 300, 7, "#9aa7ad")),
+    R(62, 280, 318, 148, "transparent"), { x: 220, y: 276 }),
+  obj("ducha", "la ducha", "la douche",
+    G(R(430, 210, 170, 210, "#fdfbf7", 8),
+      R(442, 222, 146, 186, "#d9eef1", 6),
+      S(500, 222, 500, 168, "#9aa7ad", 6),
+      E(500, 174, 34, 12, "#b9c6cb"),
+      R(584, 240, 6, 130, "#e2d9ce", 3)),
+    R(422, 156, 186, 268, "transparent"), { x: 515, y: 152 }),
+  obj("lavabo", "el lavabo", "le lavabo",
+    G(R(560, 300, 190, 74, "#fdfbf7", 18),
+      E(655, 306, 86, 18, "#d9eef1"),
+      S(655, 300, 655, 268, "#9aa7ad", 6),
+      P("M655 268 Q655 250 682 250", "none", 'stroke="#9aa7ad" stroke-width="6" stroke-linecap="round"'),
+      S(600, 374, 600, 440, "#c9beb2", 8), S(712, 374, 712, 440, "#c9beb2", 8)),
+    R(548, 244, 214, 204, "transparent"), { x: 655, y: 240 }),
+  obj("espejo", "el espejo", "le miroir",
+    G(R(584, 96, 142, 132, "#b0c7bd", 12), R(594, 106, 122, 112, "#e7f2ef", 8),
+      P("M604 196 L660 122 L700 172 L716 148", "none", 'stroke="#b0c7bd" stroke-width="5"')),
+    R(576, 88, 158, 148, "transparent"), { x: 655, y: 84 }),
+  obj("inodoro", "el inodoro", "les toilettes",
+    G(R(710, 398, 60, 74, "#fdfbf7", 14), R(722, 448, 36, 34, "#e7ded2", 8),
+      R(712, 350, 54, 54, "#fdfbf7", 10)),
+    R(700, 340, 82, 140, "transparent"), { x: 740, y: 336 }),
+  obj("toalla", "la toalla", "la serviette",
+    G(S(606, 262, 704, 262, "#b7c9c3", 5),
+      R(616, 262, 34, 96, "#7fb7a8", 8), R(660, 262, 34, 96, "#a8d0c6", 8)),
+    R(606, 254, 100, 116, "transparent"), { x: 650, y: 250 }),
+  obj("jabon", "el jabón", "le savon",
+    G(R(566, 286, 40, 18, "#f4c76b", 6), C(578, 280, 6, "#ffffff55"), C(592, 278, 4, "#ffffff55")),
+    R(560, 274, 54, 36, "transparent"), { x: 586, y: 270 }),
+  obj("cepillo", "el cepillo", "la brosse",
+    G(R(720, 282, 34, 10, "#ec4899", 4), S(748, 287, 762, 300, "#3b82f6", 4)),
+    R(712, 272, 60, 40, "transparent"), { x: 736, y: 268 }),
+];
+
+const banoLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: BANO_BG, objects: BANO_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- salle à manger ---------------------------------------------------------
+const COMEDOR_BG = G(
+  R(0, 0, 800, 366, "#f2e8da", 0),
+  R(0, 366, 800, 154, "#ddc2a6", 0),
+  S(0, 366, 800, 366, "#c4a688", 4),
+  R(588, 64, 150, 138, "#d7ecf3", 12),
+  S(663, 64, 663, 202, "#fff", 6), S(588, 132, 738, 132, "#fff", 6),
+  R(580, 56, 164, 10, "#b99c7e", 5),
+);
+
+const COMEDOR_OBJECTS = [
+  obj("mesa", "la mesa", "la table",
+    G(SHADOW(390, 478, 210, 20),
+      R(196, 300, 388, 28, "#c99f74", 10),
+      R(220, 328, 18, 140, "#a97e56"), R(542, 328, 18, 140, "#a97e56"),
+      R(300, 328, 14, 110, "#b98d5f"), R(470, 328, 14, 110, "#b98d5f")),
+    R(188, 292, 404, 186, "transparent"), { x: 390, y: 288 }),
+  obj("mantel", "el mantel", "la nappe",
+    G(R(210, 296, 360, 12, "#ffffff", 4),
+      P("M214 308 L226 392 L246 392 L240 308 Z", "#fdfaf4"),
+      P("M566 308 L554 392 L534 392 L540 308 Z", "#fdfaf4")),
+    R(206, 290, 372, 108, "transparent"), { x: 390, y: 284 }),
+  obj("silla", "la silla", "la chaise",
+    G(R(122, 288, 78, 16, "#b98d5f", 6),
+      R(122, 304, 10, 150, "#8f6740"), R(190, 304, 10, 150, "#8f6740"),
+      R(122, 200, 12, 92, "#a97e56", 5), R(134, 200, 56, 10, "#a97e56", 5)),
+    R(112, 194, 100, 264, "transparent"), { x: 162, y: 190 }),
+  obj("silla2", "la silla", "la chaise",
+    G(R(586, 288, 78, 16, "#b98d5f", 6),
+      R(586, 304, 10, 150, "#8f6740"), R(654, 304, 10, 150, "#8f6740"),
+      R(586, 200, 12, 92, "#a97e56", 5), R(598, 200, 56, 10, "#a97e56", 5)),
+    R(576, 194, 100, 264, "transparent"), { x: 626, y: 190 }),
+  obj("plato", "el plato", "l'assiette",
+    G(E(330, 292, 46, 14, "#ffffff"), E(330, 290, 34, 10, "#e7ded2"), C(330, 288, 6, "#ec4899")),
+    R(280, 264, 100, 48, "transparent"), { x: 330, y: 260 }),
+  obj("copa", "la copa", "le verre à pied",
+    G(P("M414 236 L442 236 L436 268 L420 268 Z", "#cfe6ef"),
+      S(428, 268, 428, 288, "#cfe6ef", 4), E(428, 290, 14, 4, "#cfe6ef")),
+    R(404, 228, 50, 74, "transparent"), { x: 428, y: 224 }),
+  obj("servilleta", "la servilleta", "la serviette",
+    G(R(468, 280, 46, 22, "#ffffff", 3), S(472, 288, 508, 288, "#e7ded2", 2)),
+    R(462, 272, 58, 40, "transparent"), { x: 491, y: 268 }),
+  obj("lampara", "la lámpara", "la suspension",
+    G(S(390, 0, 390, 96, "#8f6740", 4),
+      P("M340 96 L440 96 L462 168 L318 168 Z", "#f4c76b"),
+      E(390, 168, 72, 8, "#e9b756"), C(390, 176, 8, "#fff3c4")),
+    R(310, 88, 160, 92, "transparent"), { x: 390, y: 84 }),
+  obj("flor", "la flor", "la fleur",
+    G(R(520, 268, 20, 32, "#d9eef1", 4),
+      S(530, 268, 530, 236, "#22a06b", 3),
+      C(530, 228, 12, "#ec4899"), C(516, 236, 9, "#f472b6"), C(544, 236, 9, "#f472b6")),
+    R(508, 212, 46, 94, "transparent"), { x: 530, y: 208 }),
+];
+
+const comedorLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: COMEDOR_BG, objects: COMEDOR_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- entrée -----------------------------------------------------------------
+const ENTRADA_BG = G(
+  R(0, 0, 800, 368, "#efe4d5", 0),
+  R(0, 368, 800, 152, "#dcc0a2", 0),
+  S(0, 368, 800, 368, "#c4a688", 4),
+  R(0, 0, 800, 18, "#e2d3c1", 0),
+  E(250, 480, 170, 24, "#d3b596"),
+);
+
+const ENTRADA_OBJECTS = [
+  obj("puerta", "la puerta", "la porte",
+    G(R(280, 70, 210, 400, "#b98d5f", 6),
+      R(292, 82, 186, 184, "#c99f74", 4), R(292, 278, 186, 180, "#c99f74", 4),
+      C(452, 262, 7, "#6d4dff"), C(452, 300, 7, "#6d4dff")),
+    R(272, 62, 226, 416, "transparent"), { x: 386, y: 58 }),
+  obj("perchero", "el perchero", "le portemanteau",
+    G(S(626, 150, 626, 330, "#8f6740", 8),
+      S(570, 160, 682, 160, "#8f6740", 8),
+      S(626, 330, 580, 430, "#8f6740", 6), S(626, 330, 672, 430, "#8f6740", 6),
+      C(626, 146, 9, "#a97e56"),
+      P("M570 160 q-12 16 0 24", "none", 'stroke="#a97e56" stroke-width="6"'),
+      P("M682 160 q12 16 0 24", "none", 'stroke="#a97e56" stroke-width="6"')),
+    R(560, 138, 136, 300, "transparent"), { x: 626, y: 134 }),
+  obj("abrigo", "el abrigo", "le manteau",
+    G(P("M604 176 L648 176 L660 300 L644 300 L636 214 L628 300 L612 300 Z", "#3f5d7a"),
+      S(626, 200, 626, 280, "#2f4a63", 2),
+      C(626, 190, 5, "#c9b7a4")),
+    R(592, 168, 80, 140, "transparent"), { x: 626, y: 164 }),
+  obj("paraguas", "el paraguas", "le parapluie",
+    G(S(676, 250, 676, 400, "#6d4dff", 4),
+      P("M646 250 Q676 214 706 250 Z", "#7c5cff"),
+      P("M676 400 q0 18 16 18", "none", 'stroke="#6d4dff" stroke-width="5"')),
+    R(640, 210, 76, 214, "transparent"), { x: 719, y: 206 }),
+  obj("llave", "la llave", "la clé",
+    G(C(566, 250, 12, "none", 'stroke="#d4a12a" stroke-width="6"'),
+      S(578, 250, 606, 250, "#d4a12a", 5), S(598, 250, 598, 262, "#d4a12a", 4), S(590, 250, 590, 260, "#d4a12a", 4)),
+    R(548, 230, 68, 44, "transparent"), { x: 584, y: 226 }),
+  obj("zapato", "el zapato", "la chaussure",
+    G(SHADOW(220, 452, 54, 10),
+      P("M176 402 Q228 398 246 420 L258 444 L180 444 Q172 420 176 402 Z", "#5b3fd6"),
+      P("M180 444 L258 444 L262 454 L176 454 Z", "#3a3546"),
+      C(196, 410, 4, "#f4c76b")),
+    R(166, 392, 106, 70, "transparent"), { x: 214, y: 388 }),
+  obj("felpudo", "el felpudo", "le paillasson",
+    G(R(300, 462, 186, 30, "#b98d5f", 6),
+      S(316, 474, 470, 474, "#a97e56", 2), S(316, 482, 470, 482, "#a97e56", 2)),
+    R(292, 452, 202, 50, "transparent"), { x: 392, y: 448 }),
+  obj("timbre", "el timbre", "la sonnette",
+    G(R(226, 268, 26, 34, "#f4c76b", 6), C(239, 282, 5, "#b98d5f")),
+    R(216, 258, 46, 54, "transparent"), { x: 239, y: 254 }),
+];
+
+const entradaLevel = (id, focus, title, subtitle, lines, quiz) => ({
+  id,
+  title,
+  subtitle,
+  scene: { viewBox: "0 0 800 520", backdrop: ENTRADA_BG, objects: ENTRADA_OBJECTS },
+  focus,
+  lines,
+  quiz,
+});
+
+// --- niveaux ----------------------------------------------------------------
+export const APARTMENT = {
+  id: "apartamento",
+  title: "L'appartement",
+  subtitle: "Six pièces, neuf niveaux à explorer",
+  icon: "⌂",
+  color: "#7c5cff",
+  rooms: [
+    {
+      id: "salon", title: "Le salon", es: "El salón", icon: "🛋️",
+      levels: [
+        salonLevel("salon-1", ["sofa", "mesa", "television", "estanteria", "cuadro", "lampara", "alfombra"],
+          "Les meubles du salon",
+          "Repérer les grands meubles et leur place",
+          [
+            { who: "Ana", es: "Este es el salón. El sofá está delante de la ventana.", fr: "Voici le salon. Le canapé est devant la fenêtre." },
+            { who: "Carlos", es: "Me gusta la alfombra. ¿Y la televisión?", fr: "J'aime bien le tapis. Et la télévision ?" },
+            { who: "Ana", es: "Está al lado de la estantería. El cuadro es de mi abuela.", fr: "Elle est à côté de l'étagère. Le tableau est de ma grand-mère." },
+            { who: "Carlos", es: "La lámpara da mucha luz.", fr: "La lampe donne beaucoup de lumière." },
+            { who: "Ana", es: "Sí, por la noche leo en el sofá.", fr: "Oui, le soir je lis sur le canapé." },
+          ],
+          [
+            { prompt: "Où se trouve le canapé ?", options: ["Devant la fenêtre", "Dans la cuisine", "Sur la table"], answer: "Devant la fenêtre", word: "sofa" },
+            { prompt: "À côté de quoi est la télévision ?", options: ["De l'étagère", "De la lampe", "Du tableau"], answer: "De l'étagère", word: "television" },
+            { prompt: "Qui a peint le tableau ?", options: ["La grand-mère d'Ana", "Carlos", "Le voisin"], answer: "La grand-mère d'Ana", word: "cuadro" },
+          ]),
+        salonLevel("salon-2", ["mando", "reloj", "planta", "libro", "vaso", "taza", "manta", "flor"],
+          "Les petits objets",
+          "Retrouver les objets du quotidien",
+          [
+            { who: "Ana", es: "¿Dónde está el mando?", fr: "Où est la télécommande ?" },
+            { who: "Carlos", es: "Sobre la mesa, al lado del vaso.", fr: "Sur la table, à côté du verre." },
+            { who: "Ana", es: "Necesito una manta; hace frío.", fr: "J'ai besoin d'une couverture ; il fait froid." },
+            { who: "Carlos", es: "Está en el sofá. Y el reloj no funciona.", fr: "Elle est sur le canapé. Et l'horloge ne marche pas." },
+            { who: "Ana", es: "Hay una planta nueva en la esquina y un libro de mi madre.", fr: "Il y a une nouvelle plante dans le coin et un livre de ma mère." },
+            { who: "Carlos", es: "También hay una taza y una flor en la mesa.", fr: "Il y a aussi une tasse et une fleur sur la table." },
+          ],
+          [
+            { prompt: "Où est la télécommande ?", options: ["Sur la table", "Sous le canapé", "Dans l'armoire"], answer: "Sur la table", word: "mando" },
+            { prompt: "Quel objet ne fonctionne plus ?", options: ["L'horloge", "La télévision", "La lampe"], answer: "L'horloge", word: "reloj" },
+            { prompt: "De qui est le livre ?", options: ["De la mère d'Ana", "De Carlos", "De la voisine"], answer: "De la mère d'Ana", word: "libro" },
+          ]),
+      ],
+    },
+    {
+      id: "cocina", title: "La cuisine", es: "La cocina", icon: "🍳",
+      levels: [
+        cocinaLevel("cocina-1", ["frigorifico", "horno", "microondas", "fregadero", "grifo", "mesa", "silla", "armario"],
+          "Meubles et équipements",
+          "Le frigo, le four, l'évier et les placards",
+          [
+            { who: "Ana", es: "Esta es la cocina. El frigorífico está a la derecha.", fr: "Voici la cuisine. Le réfrigérateur est à droite." },
+            { who: "Carlos", es: "¿El horno está debajo?", fr: "Le four est en dessous ?" },
+            { who: "Ana", es: "Sí, al lado del microondas. Los armarios son blancos.", fr: "Oui, à côté du micro-ondes. Les placards sont blancs." },
+            { who: "Carlos", es: "¿Dónde está el fregadero?", fr: "Où est l'évier ?" },
+            { who: "Ana", es: "Delante de la ventana. El grifo es nuevo.", fr: "Devant la fenêtre. Le robinet est neuf." },
+            { who: "Carlos", es: "Comemos en esta mesa, con cuatro sillas.", fr: "Nous mangeons à cette table, avec quatre chaises." },
+          ],
+          [
+            { prompt: "Où est le réfrigérateur ?", options: ["À droite", "À gauche", "Sous la table"], answer: "À droite", word: "frigorifico" },
+            { prompt: "Qu'est-ce qui est neuf ?", options: ["Le robinet", "La table", "La chaise"], answer: "Le robinet", word: "grifo" },
+            { prompt: "Où est l'évier ?", options: ["Devant la fenêtre", "Près de la porte", "Sous le four"], answer: "Devant la fenêtre", word: "fregadero" },
+          ]),
+        cocinaLevel("cocina-2", ["plato", "tenedor", "cuchillo", "cuchara", "olla", "sarten", "vaso", "taza"],
+          "Ustensiles et vaisselle",
+          "Mettre la table et cuisiner",
+          [
+            { who: "Ana", es: "Pon los platos en la mesa.", fr: "Mets les assiettes sur la table." },
+            { who: "Carlos", es: "¿Dónde están los tenedores?", fr: "Où sont les fourchettes ?" },
+            { who: "Ana", es: "En el cajón, al lado de los cuchillos y las cucharas.", fr: "Dans le tiroir, à côté des couteaux et des cuillères." },
+            { who: "Carlos", es: "Necesito una olla para la sopa.", fr: "J'ai besoin d'une casserole pour la soupe." },
+            { who: "Ana", es: "Y una sartén para el pollo.", fr: "Et une poêle pour le poulet." },
+            { who: "Carlos", es: "Aquí tienes un vaso y una taza.", fr: "Voici un verre et une tasse." },
+          ],
+          [
+            { prompt: "Où sont les fourchettes ?", options: ["Dans le tiroir", "Sur l'étagère", "Dans le frigo"], answer: "Dans le tiroir", word: "tenedor" },
+            { prompt: "Que faut-il pour la soupe ?", options: ["Une casserole", "Une poêle", "Un verre"], answer: "Une casserole", word: "olla" },
+            { prompt: "Que faut-il pour le poulet ?", options: ["Une poêle", "Une tasse", "Une assiette"], answer: "Une poêle", word: "sarten" },
+          ]),
+        cocinaLevel("cocina-3", ["manzana", "pan", "leche", "huevo", "queso", "tomate", "cebolla", "botella"],
+          "Aliments et actions",
+          "Préparer le petit-déjeuner et le dîner",
+          [
+            { who: "Carlos", es: "¿Qué hay para desayunar?", fr: "Qu'y a-t-il pour le petit-déjeuner ?" },
+            { who: "Ana", es: "Hay pan, queso y huevos. Y leche en la botella.", fr: "Il y a du pain, du fromage et des œufs. Et du lait dans la bouteille." },
+            { who: "Carlos", es: "¿Hay fruta?", fr: "Y a-t-il des fruits ?" },
+            { who: "Ana", es: "Sí, una manzana y un tomate.", fr: "Oui, une pomme et une tomate." },
+            { who: "Carlos", es: "También hay una cebolla para la cena.", fr: "Il y a aussi un oignon pour le dîner." },
+            { who: "Ana", es: "Perfecto. Voy a cocinar.", fr: "Parfait. Je vais cuisiner." },
+          ],
+          [
+            { prompt: "Où est le lait ?", options: ["Dans la bouteille", "Sur la chaise", "Dans le four"], answer: "Dans la bouteille", word: "leche" },
+            { prompt: "Quels fruits y a-t-il ?", options: ["Une pomme et une tomate", "Une orange", "Une poire"], answer: "Une pomme et une tomate", word: "manzana" },
+            { prompt: "Que prépare-t-on pour le dîner ?", options: ["Un oignon", "Un gâteau", "Une salade de fruits"], answer: "Un oignon", word: "cebolla" },
+          ]),
+      ],
+    },
+    {
+      id: "dormitorio", title: "La chambre", es: "El dormitorio", icon: "🛏️",
+      levels: [
+        dormLevel("dormitorio-1", ["cama", "mesilla", "lampara", "armario", "cuadro", "alfombra", "reloj"],
+          "Meubles de la chambre",
+          "Le lit, l'armoire et la table de chevet",
+          [
+            { who: "Ana", es: "Mi dormitorio es pequeño, pero tranquilo.", fr: "Ma chambre est petite, mais tranquille." },
+            { who: "Carlos", es: "La cama está al lado de la ventana.", fr: "Le lit est à côté de la fenêtre." },
+            { who: "Ana", es: "¿Y la mesilla?", fr: "Et la table de chevet ?" },
+            { who: "Carlos", es: "A la derecha, con la lámpara.", fr: "À droite, avec la lampe." },
+            { who: "Ana", es: "El armario está delante de la cama. Hay un cuadro y una alfombra.", fr: "L'armoire est devant le lit. Il y a un tableau et un tapis." },
+            { who: "Carlos", es: "Me gusta el reloj de la pared.", fr: "J'aime l'horloge au mur." },
+          ],
+          [
+            { prompt: "Où est le lit ?", options: ["À côté de la fenêtre", "Dans le salon", "Derrière l'armoire"], answer: "À côté de la fenêtre", word: "cama" },
+            { prompt: "Qu'y a-t-il sur la table de chevet ?", options: ["Une lampe", "Un livre", "Un verre"], answer: "Une lampe", word: "lampara" },
+            { prompt: "Où est l'armoire ?", options: ["Devant le lit", "Derrière la porte", "Sous la fenêtre"], answer: "Devant le lit", word: "armario" },
+          ]),
+      ],
+    },
+    {
+      id: "bano", title: "La salle de bain", es: "El baño", icon: "🛁",
+      levels: [
+        banoLevel("bano-1", ["banera", "ducha", "lavabo", "espejo", "inodoro", "toalla", "jabon", "cepillo"],
+          "La salle de bain",
+          "Se laver, se regarder, se sécher",
+          [
+            { who: "Ana", es: "El baño tiene una ducha y una bañera.", fr: "La salle de bain a une douche et une baignoire." },
+            { who: "Carlos", es: "¿Dónde está el lavabo?", fr: "Où est le lavabo ?" },
+            { who: "Ana", es: "Debajo del espejo.", fr: "Sous le miroir." },
+            { who: "Carlos", es: "Necesito una toalla y jabón.", fr: "J'ai besoin d'une serviette et de savon." },
+            { who: "Ana", es: "Están en el armario. El cepillo es azul.", fr: "Ils sont dans l'armoire. La brosse est bleue." },
+            { who: "Carlos", es: "Y el inodoro está al fondo.", fr: "Et les toilettes sont au fond." },
+          ],
+          [
+            { prompt: "Où est le lavabo ?", options: ["Sous le miroir", "Dans la douche", "Près de la porte"], answer: "Sous le miroir", word: "lavabo" },
+            { prompt: "Où sont la serviette et le savon ?", options: ["Dans l'armoire", "Sur le lit", "Sous l'évier"], answer: "Dans l'armoire", word: "toalla" },
+            { prompt: "De quelle couleur est la brosse ?", options: ["Bleue", "Rouge", "Verte"], answer: "Bleue", word: "cepillo" },
+          ]),
+      ],
+    },
+    {
+      id: "comedor", title: "La salle à manger", es: "El comedor", icon: "🍽️",
+      levels: [
+        comedorLevel("comedor-1", ["mesa", "silla", "mantel", "plato", "copa", "servilleta", "lampara", "flor"],
+          "La table de fête",
+          "Dresser une table pour quatre personnes",
+          [
+            { who: "Ana", es: "La mesa está lista para la cena.", fr: "La table est prête pour le dîner." },
+            { who: "Carlos", es: "Pon el mantel y las servilletas.", fr: "Mets la nappe et les serviettes." },
+            { who: "Ana", es: "¿Cuántas copas?", fr: "Combien de verres ?" },
+            { who: "Carlos", es: "Cuatro. Y los platos al lado.", fr: "Quatre. Et les assiettes à côté." },
+            { who: "Ana", es: "La lámpara da una luz muy bonita.", fr: "La suspension donne une très belle lumière." },
+            { who: "Carlos", es: "Las flores son del jardín.", fr: "Les fleurs viennent du jardin." },
+          ],
+          [
+            { prompt: "Combien de verres faut-il ?", options: ["Quatre", "Deux", "Six"], answer: "Quatre", word: "copa" },
+            { prompt: "D'où viennent les fleurs ?", options: ["Du jardin", "Du marché", "De la cuisine"], answer: "Du jardin", word: "flor" },
+            { prompt: "Qu'est-ce qui donne une belle lumière ?", options: ["La suspension", "Le tableau", "La nappe"], answer: "La suspension", word: "lampara" },
+          ]),
+      ],
+    },
+    {
+      id: "entrada", title: "L'entrée", es: "La entrada", icon: "🚪",
+      levels: [
+        entradaLevel("entrada-1", ["puerta", "perchero", "abrigo", "paraguas", "llave", "zapato", "felpudo", "timbre"],
+          "L'entrée",
+          "Ranger ses affaires en rentrant",
+          [
+            { who: "Carlos", es: "La puerta está abierta.", fr: "La porte est ouverte." },
+            { who: "Ana", es: "Deja las llaves en el perchero.", fr: "Laisse les clés sur le portemanteau." },
+            { who: "Carlos", es: "Mi abrigo está allí, con el paraguas.", fr: "Mon manteau est là, avec le parapluie." },
+            { who: "Ana", es: "Los zapatos van debajo, junto al felpudo.", fr: "Les chaussures vont en dessous, à côté du paillasson." },
+            { who: "Carlos", es: "¿Suena el timbre?", fr: "On sonne ?" },
+            { who: "Ana", es: "Sí, ya voy.", fr: "Oui, j'arrive." },
+          ],
+          [
+            { prompt: "Où faut-il laisser les clés ?", options: ["Sur le portemanteau", "Dans la cuisine", "Sous le paillasson"], answer: "Sur le portemanteau", word: "llave" },
+            { prompt: "Qu'y a-t-il avec le manteau ?", options: ["Un parapluie", "Un sac", "Un chapeau"], answer: "Un parapluie", word: "paraguas" },
+            { prompt: "Où vont les chaussures ?", options: ["À côté du paillasson", "Sur la table", "Dans le salon"], answer: "À côté du paillasson", word: "zapato" },
+          ]),
+      ],
+    },
+  ],
+};
+
+export const ENVIRONMENTS = [APARTMENT, ...EXTRA_ENVIRONMENTS];
+export const ENVIRONMENTS_BY_ID = Object.fromEntries(ENVIRONMENTS.map((e) => [e.id, e]));
+
+export function findLevel(envId, levelId) {
+  const env = ENVIRONMENTS_BY_ID[envId];
+  if (!env) return null;
+  for (const room of env.rooms) {
+    const level = room.levels.find((l) => l.id === levelId);
+    if (level) return { env, room, level };
+  }
+  return null;
+}
+
+export function allLevels() {
+  return ENVIRONMENTS.flatMap((env) =>
+    env.rooms.flatMap((room) => room.levels.map((level) => ({ env, room, level }))),
+  );
+}

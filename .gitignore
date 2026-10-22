@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.env.*
+.freebuff
+/screenshots
+.DS_Store
+Thumbs.db
+*.log

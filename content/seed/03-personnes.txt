@@ -1,0 +1,123 @@
+# 03 — Personnes, famille, corps, santé, caractère
+persona|personne|n.f
+gente|les gens|n.f
+hombre|homme|n.m
+mujer|femme|n.f
+niño|enfant (garçon)|n.m
+niña|enfant (fille)|n.f
+chico|garçon|n.m
+chica|fille|n.f
+bebé|bébé|n.m
+adulto|adulte|n.m
+joven|jeune|adj
+anciano|personne âgée|n.m
+señor|monsieur|n.m
+señora|madame|n.f
+señorita|mademoiselle|n.f
+amigo|ami|n.m
+amiga|amie|n.f
+compañero|camarade / collègue|n.m
+vecino|voisin|n.m
+familia|famille|n.f
+padre|père|n.m
+madre|mère|n.f
+papá|papa|n.m
+mamá|maman|n.f
+hijo|fils|n.m
+hija|fille (enfant)|n.f
+hermano|frère|n.m
+hermana|sœur|n.f
+abuelo|grand-père|n.m
+abuela|grand-mère|n.f
+nieto|petit-fils|n.m
+tío|oncle|n.m
+tía|tante|n.f
+primo|cousin|n.m
+prima|cousine|n.f
+sobrino|neveu|n.m
+sobrina|nièce|n.f
+esposo|époux|n.m
+esposa|épouse|n.f
+marido|mari|n.m
+novio|petit ami / fiancé|n.m
+novia|petite amie / fiancée|n.f
+suegro|beau-père|n.m
+suegra|belle-mère|n.f
+cuñado|beau-frère|n.m
+pareja|couple / partenaire|n.f
+grupo|groupe|n.m
+equipo|équipe|n.m
+jefe|chef|n.m
+cliente|client|n.m
+médico|médecin|n.m
+enfermero|infirmier|n.m
+profesor|professeur|n.m
+estudiante|étudiant|n.m
+alumno|élève|n.m
+cuerpo|corps|n.m
+cabeza|tête|n.f
+cara|visage|n.f
+ojo|œil|n.m
+oreja|oreille|n.f
+nariz|nez|n.f
+boca|bouche|n.f
+diente|dent|n.m
+labio|lèvre|n.m
+lengua|langue|n.f
+pelo|cheveux|n.m
+cuello|cou|n.m
+hombro|épaule|n.m
+brazo|bras|n.m
+mano|main|n.f
+dedo|doigt|n.m
+pecho|poitrine|n.m
+espalda|dos|n.f
+estómago|estomac|n.m
+pierna|jambe|n.f
+rodilla|genou|n.f
+pie|pied|n.m
+piel|peau|n.f
+corazón|cœur|n.m
+sangre|sang|n.f
+hueso|os|n.m
+cerebro|cerveau|n.m
+garganta|gorge|n.f
+salud|santé|n.f
+enfermedad|maladie|n.f
+dolor|douleur|n.m
+fiebre|fièvre|n.f
+tos|toux|n.f
+gripe|grippe|n.f
+resfriado|rhume|n.m
+medicina|médicament / médecine|n.f
+pastilla|comprimé|n.f
+receta|ordonnance / recette|n.f
+farmacia|pharmacie|n.f
+hospital|hôpital|n.m
+consulta|consultation|n.f
+cita|rendez-vous|n.f
+síntoma|symptôme|n.m
+alergia|allergie|n.f
+herida|blessure|n.f
+análisis|analyse|n.m
+reposo|repos|n.m
+emergencia|urgence|n.f
+carácter|caractère|n.m
+humor|humeur|n.m
+paciencia|patience|n.f
+ilusión|envie / espoir|n.f
+miedo|peur|n.f
+alegría|joie|n.f
+amor|amour|n.m
+amistad|amitié|n.f
+confianza|confiance|n.f
+respeto|respect|n.m
+vergüenza|honte|n.f
+orgullo|fierté|n.m
+esperanza|espoir|n.f
+sueño|rêve / sommeil|n.m
+vida|vie|n.f
+muerte|mort|n.f
+nombre|nom / prénom|n.m
+edad|âge|n.f
+cumpleaños|anniversaire|n.m

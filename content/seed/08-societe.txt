@@ -1,0 +1,133 @@
+# 08 — École, travail, technologie, société, culture, sport, voyage
+clase|cours / classe|n.f
+aula|salle de classe|n.f
+libro|livre|n.m
+cuaderno|cahier|n.m
+lápiz|crayon|n.m
+bolígrafo|stylo|n.m
+goma|gomme|n.f
+regla|règle|n.f
+mochila|cartable|n.f
+pizarra|tableau (classe)|n.f
+deberes|devoirs|n.m
+examen|examen|n.m
+nota|note|n.f
+pregunta|question|n.f
+respuesta|réponse|n.f
+idioma|langue|n.m
+palabra|mot|n.f
+frase|phrase|n.f
+letra|lettre|n.f
+matemáticas|mathématiques|n.f
+historia|histoire|n.f
+ciencia|science|n.f
+música|musique|n.f
+arte|art|n.m
+geografía|géographie|n.f
+física|physique|n.f
+química|chimie|n.f
+biología|biologie|n.f
+literatura|littérature|n.f
+curso|année / cours|n.m
+asignatura|matière (scolaire)|n.f
+recreo|récréation|n.m
+diccionario|dictionnaire|n.m
+página|page|n.f
+capítulo|chapitre|n.m
+título|titre|n.m
+autor|auteur|n.m
+trabajo|travail|n.m
+empresa|entreprise|n.f
+oficina|bureau|n.m
+reunión|réunion|n.f
+proyecto|projet|n.m
+ordenador|ordinateur|n.m
+pantalla|écran|n.f
+teclado|clavier|n.m
+teléfono|téléphone|n.m
+móvil|portable|n.m
+internet|internet|n.m
+red|réseau / filet|n.f
+web|web|n.f
+programa|programme|n.m
+archivo|fichier|n.m
+documento|document|n.m
+informe|rapport|n.m
+contrato|contrat|n.m
+sueldo|salaire|n.m
+dinero|argent|n.m
+euro|euro|n.m
+precio|prix|n.m
+factura|facture|n.f
+impuesto|impôt|n.m
+tarjeta|carte (bancaire)|n.f
+efectivo|espèces|n.m
+moneda|pièce / monnaie|n.f
+presupuesto|budget|n.m
+horario|horaire|n.m
+descanso|pause|n.m
+entrevista|entretien / interview|n.f
+puesto|poste / place|n.m
+cargo|poste / fonction|n.m
+director|directeur|n.m
+sociedad|société|n.f
+país|pays|n.m
+nación|nation|n.f
+gobierno|gouvernement|n.m
+ley|loi|n.f
+derecho|droit|n.m
+libertad|liberté|n.f
+paz|paix|n.f
+guerra|guerre|n.f
+política|politique|n.f
+presidente|président|n.m
+rey|roi|n.m
+reina|reine|n.f
+ciudadano|citoyen|n.m
+población|population|n.f
+cultura|culture|n.f
+costumbre|habitude|n.f
+religión|religion|n.f
+problema|problème|n.m
+solución|solution|n.f
+causa|cause|n.f
+consecuencia|conséquence|n.f
+cambio|changement|n.m
+futuro|avenir|n.m
+pasado|passé|n.m
+presente|présent|n.m
+noticia|nouvelle (info)|n.f
+periódico|journal|n.m
+revista|magazine|n.f
+película|film|n.f
+serie|série|n.f
+actor|acteur|n.m
+actriz|actrice|n.f
+cantante|chanteur|n.m
+canción|chanson|n.f
+concierto|concert|n.m
+festival|festival|n.m
+deporte|sport|n.m
+fútbol|football|n.m
+baloncesto|basket|n.m
+tenis|tennis|n.m
+natación|natation|n.f
+partido|match / parti|n.m
+jugador|joueur|n.m
+entrenador|entraîneur|n.m
+gimnasio|salle de sport|n.m
+viaje|voyage|n.m
+turista|touriste|n.m
+vuelo|vol|n.m
+equipaje|bagages|n.m
+pasaporte|passeport|n.m
+destino|destination|n.m
+guía|guide|n.m
+frontera|frontière|n.f
+extranjero|étranger|n.m
+aventura|aventure|n.f
+recuerdo|souvenir|n.m
+foto|photo|n.f
+cámara|appareil photo|n.f
+postal|carte postale|n.f
+espectáculo|spectacle|n.m
